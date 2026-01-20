@@ -2,6 +2,8 @@
 
 Welcome — this site is generated from the repository's ZJE courses folder, from my own notes. If you have any further question, find me in xhs@生成一只头上戴着花花的小momo；or via email: c1556613010@outlook.com
 
+Credit to tz and yc.
+
 Do not blame me if these notes are not good! You can tell me and I will fix the errors.
 
 Browse the sections below:
