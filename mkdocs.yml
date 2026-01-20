@@ -1,0 +1,10 @@
+site_name: ZJE Collection
+site_url: https://CHENyiru3.github.io/Yiru_study_in_zje
+docs_dir: ZJE_Collection
+theme:
+  name: material
+markdown_extensions:
+  - toc:
+      permalink: true
+plugins:
+  - search
