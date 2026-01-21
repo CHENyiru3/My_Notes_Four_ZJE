@@ -4,9 +4,13 @@ Welcome — this site is generated from the repository's ZJE courses folder, fro
 
 If you have any further question, find me in xhs@生成一只头上戴花花的小momo；or via email: c1556613010@outlook.com and you are very welcomed to contribute to this repo, like filling the gap of other courses.
 
-Credit to tz and yc.
+Credit to：
+- Yicheng_22: contribute to IBMS3
+- Tianze_22: contribute to the recovery of files
+- Xiaoran_22: contribute to multiple courses! 
+- Yue_22: contribute to multiple courses!
 
-Do not blame me if these notes are not good! You can tell me and I will fix the errors.
+Thank you all! If you find anything wrong, please tell me and I will fix the errors.
 
 Browse the sections below, you can go through everything online:
 
