@@ -1,0 +1,1595 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://CHENyiru3.github.io/Yiru_study_in_zje/IBMS3/Yiru/detailed/experiments_case/EXTRA%20eQTL/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>eQTL分析及其与GWAS联合分析 - ZJE Collection</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#eqtlgwas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="ZJE Collection" class="md-header__button md-logo" aria-label="ZJE Collection" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZJE Collection
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              eQTL分析及其与GWAS联合分析
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="ZJE Collection" class="md-nav__button md-logo" aria-label="ZJE Collection" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ZJE Collection
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Courses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Year 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Year 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../CHEM1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHEM1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IBI1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBI1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IBMS1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBMS1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ICMB1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ICMB1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../MATH1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MATH1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Year 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Year 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ADS2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADS2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../BG2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BG2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../BaO2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BaO2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../DST2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DST2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../GP2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IFBS2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IFBS2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../MI2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MI2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Year 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Year 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../BMI3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BMI3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../CBSB3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CBSB3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBMS3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IN3_full/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IN3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../MBE3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MBE3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../PoN3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PoN3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Year 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Year 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../BIA4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BIA4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IBMS4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBMS4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IID_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IID_4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributors
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contributors
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../AUTHORS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ZIPS_INDEX/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zips Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eqtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eQTL分析基本步骤
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gwaseqtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GWAS与eQTL联合分析
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实际应用案例
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分析注意事项
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-experimental-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Experimental Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-model-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Model System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-measurement-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Measurement Approach
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-group-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Group Setting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-data-analysis-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Data Analysis &amp; Presentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="eqtlgwas">eQTL分析及其与GWAS联合分析<a class="headerlink" href="#eqtlgwas" title="Permanent link">&para;</a></h1>
+<p>eQTL(表达数量性状位点)分析是研究遗传变异如何影响基因表达的方法。将eQTL与GWAS联合分析可以帮助解释疾病相关变异的功能机制。</p>
+<h2 id="eqtl">eQTL分析基本步骤<a class="headerlink" href="#eqtl" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>数据收集</strong></li>
+<li>基因型数据：SNP芯片或测序数据</li>
+<li>基因表达数据：RNA-seq或芯片数据</li>
+<li>
+<p>样本信息：人口学特征、批次等协变量</p>
+</li>
+<li>
+<p><strong>数据预处理</strong></p>
+</li>
+<li>基因型数据：质控、缺失值填充、连锁不平衡计算</li>
+<li>表达数据：标准化、批次效应校正、离群值处理</li>
+<li>
+<p>转录本定量：如使用Salmon、RSEM等工具</p>
+</li>
+<li>
+<p><strong>eQTL映射</strong></p>
+</li>
+<li>近端eQTL(cis-eQTL)：变异位点靠近目标基因(通常±1Mb)</li>
+<li>远端eQTL(trans-eQTL)：变异位点远离目标基因或在不同染色体上</li>
+<li>
+<p>使用线性回归或混合模型检测SNP与基因表达的关联</p>
+</li>
+<li>
+<p><strong>多重检验校正</strong></p>
+</li>
+<li>FDR控制</li>
+<li>置换测试</li>
+<li>
+<p>考虑多组织、多条件分析的校正</p>
+</li>
+<li>
+<p><strong>常用软件</strong></p>
+</li>
+<li>MatrixEQTL：快速eQTL分析工具</li>
+<li>FastQTL：针对大数据集优化</li>
+<li>QTLtools：综合工具包</li>
+</ol>
+<h2 id="gwaseqtl">GWAS与eQTL联合分析<a class="headerlink" href="#gwaseqtl" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>共定位分析(Colocalization)</strong></li>
+<li>检测GWAS信号与eQTL信号是否共享相同的因果变异</li>
+<li>
+<p>工具：coloc、HEIDI、eCAVIAR、FINEMAP</p>
+</li>
+<li>
+<p><strong>转录组广泛关联研究(TWAS)</strong></p>
+</li>
+<li>利用eQTL预测基因表达，然后与表型关联</li>
+<li>
+<p>工具：PrediXcan、FUSION、S-PrediXcan</p>
+</li>
+<li>
+<p><strong>Mendelian Randomization(MR)</strong></p>
+</li>
+<li>使用eQTL作为工具变量评估基因表达与疾病的因果关系</li>
+<li>
+<p>工具：MR-Base、TwoSampleMR</p>
+</li>
+<li>
+<p><strong>功能注释和富集分析</strong></p>
+</li>
+<li>整合ENCODE、Roadmap等功能组学数据</li>
+<li>
+<p>使用FUMA、GARFIELD等工具进行富集分析</p>
+</li>
+<li>
+<p><strong>多组织整合分析</strong></p>
+</li>
+<li>使用GTEx等多组织eQTL数据</li>
+<li>识别组织特异性或共享的调控机制</li>
+</ol>
+<h2 id="_1">实际应用案例<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>肺功能GWAS与肺组织eQTL联合分析</strong></li>
+<li>识别GWAS信号共定位的基因</li>
+<li>
+<p>发现潜在的致病基因和调控机制</p>
+</li>
+<li>
+<p><strong>精神疾病GWAS与脑组织eQTL整合</strong></p>
+</li>
+<li>识别特定脑区的调控变异</li>
+<li>揭示神经精神疾病的分子机制</li>
+</ol>
+<h2 id="_2">分析注意事项<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li>考虑组织特异性和细胞类型特异性</li>
+<li>整合表观遗传学数据增强解释力</li>
+<li>考虑样本量和统计功效</li>
+<li>验证关键发现(如体外功能实验)</li>
+</ol>
+<p>通过eQTL和GWAS的联合分析，可以将统计关联转化为生物学机制，为疾病的理解和干预提供更精确的分子靶点。</p>
+<hr />
+<p>Designing an eQTL Study to Identify Genetic Regulators of Brain Gene Expression in Neurodegenerative Disease</p>
+<h2 id="1-experimental-purpose">1. Experimental Purpose<a class="headerlink" href="#1-experimental-purpose" title="Permanent link">&para;</a></h2>
+<p><strong>Scientific Question:</strong> How do genetic variants influence gene expression in different brain regions affected by neurodegenerative disease, and do disease-associated variants act through region-specific gene regulation?</p>
+<p>This experiment directly tests this question by correlating genome-wide genotypes with transcriptome-wide gene expression across multiple brain regions from the same individuals, comparing patterns between patients with neurodegenerative disease and neurologically normal controls.</p>
+<p><strong>Purpose of Design:</strong> While previous eQTL studies have examined brain tissue, most have focused on single brain regions or used bulk tissue. This design advances the field by analyzing multiple disease-relevant brain regions from the same individuals, enabling the detection of region-specific eQTLs and their potential role in selective vulnerability to neurodegeneration.</p>
+<h2 id="2-model-system">2. Model System<a class="headerlink" href="#2-model-system" title="Permanent link">&para;</a></h2>
+<p><strong>Model System:</strong> Post-mortem human brain tissue from individuals with neurodegenerative disease (Alzheimer's and Parkinson's) and neurologically normal controls, focusing on five key regions: prefrontal cortex, hippocampus, substantia nigra, cerebellum, and putamen.</p>
+<p><strong>Appropriateness:</strong> Human brain tissue is essential for this study as gene regulation is highly tissue-specific and species-specific. Brain region-specific eQTLs cannot be accurately modeled in other systems, and the disease context is critical for identifying dysregulated expression patterns.</p>
+<p><strong>Alternative Models:</strong>
+- Induced pluripotent stem cell (iPSC)-derived neurons: Allow for experimental manipulation but lack brain region context and mature neural networks
+- Organoids: Provide 3D tissue architecture but remain simplified models with variable reproducibility
+- Animal models: Enable controlled genetic manipulation but have different regulatory landscapes than humans
+- Blood eQTLs: More accessible but poorly reflect brain-specific regulation</p>
+<p><strong>Ethical Considerations:</strong> 
+- Respectful handling of post-mortem tissue and informed consent from donors or next-of-kin
+- Appropriate brain bank protocols and ethical approvals
+- Consideration of donor wishes regarding data sharing and future research
+- Responsible return of research results to scientific community and donor families</p>
+<h2 id="3-measurement-approach">3. Measurement Approach<a class="headerlink" href="#3-measurement-approach" title="Permanent link">&para;</a></h2>
+<p><strong>Techniques:</strong>
+- Whole genome sequencing (30x coverage) for comprehensive genotyping
+- RNA-sequencing (paired-end, 100M reads/sample) for gene expression quantification
+- Single-nucleus RNA-sequencing on subset of samples for cell-type specific eQTLs
+- ATAC-seq to assess chromatin accessibility in the same regions
+- DNA methylation profiling using EPIC arrays</p>
+<p><strong>Choice Rationale:</strong> This multi-omic approach allows correlation between genetic variation, gene expression, and epigenetic regulation. WGS captures all potential regulatory variants, while deep RNA-seq enables detection of alternative splicing QTLs in addition to expression QTLs.</p>
+<p><strong>Technical Replicates:</strong> 
+- 10% of samples processed in duplicate for RNA-seq quality control
+- Technical standards included in each sequencing batch
+- Randomization of disease and control samples across processing batches</p>
+<p><strong>Potential Biases and Mitigation:</strong>
+- Post-mortem interval effects: Record PMI and include as covariate; exclude samples with PMI &gt;24 hours
+- RNA degradation: Measure RIN scores and exclude samples with RIN &lt;6
+- Batch effects: Implement batch correction algorithms; use technical controls
+- Cell-type composition: Estimate cell-type proportions using deconvolution methods and include as covariates
+- Medication effects: Record treatment history and analyze as potential confounder</p>
+<h2 id="4-group-setting">4. Group Setting<a class="headerlink" href="#4-group-setting" title="Permanent link">&para;</a></h2>
+<p><strong>Experimental Groups:</strong>
+- 150 Alzheimer's disease cases
+- 150 Parkinson's disease cases
+- 200 neurologically normal controls
+- All groups with 5 brain regions per individual (total ~2,500 samples)</p>
+<p><strong>Controlled Variables:</strong>
+- Age at death (matched within 5-year ranges)
+- Sex (balanced distribution)
+- Post-mortem interval (&lt;24 hours)
+- Ancestry (principal components included in analysis)
+- Brain pH (measured and included as covariate)
+- Agonal state (recorded and included as covariate)</p>
+<p><strong>Negative Controls:</strong>
+- Cerebellum as minimally affected region in Alzheimer's disease
+- Prefrontal cortex as less affected region in Parkinson's disease
+- Permutation-based null distributions for statistical testing</p>
+<p><strong>Biological Replicates:</strong> 
+With 150-200 individuals per group across 5 brain regions, the study is powered to detect eQTLs explaining &gt;5% of expression variance at FDR&lt;0.05. This sample size enables identification of both common and moderately rare variant effects on gene expression.</p>
+<p><strong>Modified Design Suggestion:</strong>
+Include longitudinal samples from brain banks with multiple tissue collections at different disease stages to capture dynamic changes in eQTL effects during disease progression.</p>
+<h2 id="5-data-analysis-presentation">5. Data Analysis &amp; Presentation<a class="headerlink" href="#5-data-analysis-presentation" title="Permanent link">&para;</a></h2>
+<p><strong>Data Processing:</strong>
+- RNA-seq alignment using STAR, quantification with Salmon
+- Quality control: removal of low-quality samples (low mapping rate, high duplication)
+- Normalization for library size and composition using TMM method
+- Adjustment for technical covariates (RIN, batch, PMI)
+- Variant calling from WGS using GATK pipeline</p>
+<p><strong>Statistical Tests:</strong>
+- Linear regression models testing associations between genotypes and normalized expression values
+- Adjustment for age, sex, ancestry PCs, and estimated cell-type proportions
+- Multiple testing correction using Benjamini-Hochberg FDR
+- Significance threshold: FDR &lt; 0.05
+- Bayesian colocalization analysis to identify shared causal variants between eQTLs and GWAS signals
+- Differential eQTL analysis comparing disease vs. control</p>
+<p><strong>Data Presentation:</strong>
+- Circular plots showing genome-wide distribution of significant eQTLs
+- Heat maps displaying region-specificity of eQTL effects
+- Box plots showing genotype-expression relationships for top eQTLs
+- Network visualizations of eQTL-gene interactions in disease-relevant pathways
+- Venn diagrams comparing eQTLs across brain regions</p>
+<p><strong>Result Confirmation:</strong>
+- Replication in independent brain tissue datasets
+- Cross-validation within dataset using leave-one-out approaches
+- Validation of top eQTLs using qPCR in subset of samples
+- Functional validation of selected eQTLs using CRISPR editing in neural cell models
+- Integration with existing eQTL databases (GTEx, CommonMind, AMP-AD)</p>
+<p>This design enables comprehensive mapping of the genetic architecture of gene expression in the human brain, with special emphasis on regions affected by neurodegenerative disease, potentially revealing mechanisms by which disease-associated variants exert their effects through altered gene regulation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": [], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

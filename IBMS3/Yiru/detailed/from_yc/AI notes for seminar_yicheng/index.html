@@ -1,0 +1,2395 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://CHENyiru3.github.io/Yiru_study_in_zje/IBMS3/Yiru/detailed/from_yc/AI%20notes%20for%20seminar_yicheng/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>AI notes for seminar yicheng - ZJE Collection</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#s2w11-seminar-deep-learning-for-genomics-modeling-and-interpretation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="ZJE Collection" class="md-header__button md-logo" aria-label="ZJE Collection" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZJE Collection
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AI notes for seminar yicheng
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="ZJE Collection" class="md-nav__button md-logo" aria-label="ZJE Collection" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ZJE Collection
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Courses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Year 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Year 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../CHEM1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHEM1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IBI1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBI1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IBMS1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBMS1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ICMB1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ICMB1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../MATH1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MATH1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Year 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Year 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ADS2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADS2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../BG2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BG2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../BaO2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BaO2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../DST2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DST2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../GP2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IFBS2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IFBS2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../MI2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MI2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Year 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Year 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../BMI3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BMI3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../CBSB3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CBSB3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBMS3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IN3_full/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IN3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../MBE3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MBE3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../PoN3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PoN3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Year 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Year 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../BIA4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BIA4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IBMS4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBMS4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../IID_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IID_4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributors
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contributors
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../AUTHORS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ZIPS_INDEX/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zips Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#s2w11-seminar-deep-learning-for-genomics-modeling-and-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W1.1. Seminar. Deep learning for genomics modeling and interpretation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S2.W1.1. Seminar. Deep learning for genomics modeling and interpretation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-translatorner-a-transformer-based-model-for-mrna-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Translatorner: A Transformer-based Model for mRNA Translation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Translatorner: A Transformer-based Model for mRNA Translation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experimental-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experimental Purpose:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model System:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measurement Approach:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group Setting:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Analysis &amp; Presentation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-transrbp-modeling-rbp-binding-and-its-interaction-with-m6a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. TransRBP: Modeling RBP Binding and Its Interaction with m6A
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. TransRBP: Modeling RBP Binding and Its Interaction with m6A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experimental-purpose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experimental Purpose:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-system_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model System:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-approach_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measurement Approach:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-setting_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group Setting:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis-presentation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Analysis &amp; Presentation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Observations:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w21-molecular-interactions-from-structure-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W2.1. Molecular interactions from structure perspective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w22-seminar-empowering-precision-medicine-with-computational-biology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W2.2. Seminar. Empowering precision medicine with computational biology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S2.W2.2. Seminar. Empowering precision medicine with computational biology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-resa-de-novo-identification-of-expressed-cancer-somatic-mutations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. RESA: De Novo Identification of Expressed Cancer Somatic Mutations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. RESA: De Novo Identification of Expressed Cancer Somatic Mutations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experimental-purpose_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experimental Purpose:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-system_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model System:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-approach_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measurement Approach:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-setting_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group Setting:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis-presentation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Analysis &amp; Presentation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-magpie-pathogenic-prediction-for-multiple-variant-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. MAGPIE: Pathogenic Prediction for Multiple Variant Types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. MAGPIE: Pathogenic Prediction for Multiple Variant Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experimental-purpose_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experimental Purpose:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-system_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model System:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-approach_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measurement Approach:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-setting_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group Setting:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis-presentation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Analysis &amp; Presentation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sptransformer-tissue-specific-splicing-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. SpTransformer: Tissue-Specific Splicing Prediction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. SpTransformer: Tissue-Specific Splicing Prediction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experimental-purpose_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experimental Purpose:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-system_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model System:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-approach_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measurement Approach:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-setting_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group Setting:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis-presentation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Analysis &amp; Presentation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-observations_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Observations:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w23-big-data-analysis-dimensionality-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W2.3. Big data analysis - dimensionality reduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w31-large-molecule-de-novo-design-using-antibody-as-an-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W3.1. Large molecule de-novo design, using antibody as an example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w32-seminar-structural-study-of-epigenetic-regulation-in-transcription" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W3.2. Seminar. Structural study of epigenetic regulation in transcription
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S2.W3.2. Seminar. Structural study of epigenetic regulation in transcription">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-experimental-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Experimental Purpose:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-model-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Model System:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-measurement-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Measurement Approach:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-group-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Group Setting:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-data-analysis-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Data Analysis &amp; Presentation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-observations_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Observations:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w41-single-cell-spatial-temporal-multi-omics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W4.1. Single-cell spatial-temporal multi-omics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w42-survival-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W4.2. Survival analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w43-seminar-host-microbial-interactions-and-lipid-metabolism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W4.3. Seminar. Host-microbial Interactions and Lipid Metabolism
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S2.W4.3. Seminar. Host-microbial Interactions and Lipid Metabolism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-experimental-purpose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Experimental Purpose:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-model-system_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Model System:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-measurement-approach_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Measurement Approach:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-group-setting_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Group Setting:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-data-analysis-presentation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Data Analysis &amp; Presentation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-observations_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Observations:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w51-binary-trees-and-random-forest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W5.1. Binary trees and Random Forest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2w52-seminar-how-to-do-a-scientific-project-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S2.W5.2. Seminar. How to Do a Scientific Project Step-by-step
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S2.W5.2. Seminar. How to Do a Scientific Project Step-by-step">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-experimental-purpose_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Experimental Purpose:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-model-system_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Model System:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-measurement-approach_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Measurement Approach:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-group-setting_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Group Setting:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-data-analysis-presentation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Data Analysis &amp; Presentation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-observations_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Observations:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>AI notes for seminar yicheng</h1>
+
+<h2 id="s2w11-seminar-deep-learning-for-genomics-modeling-and-interpretation">S2.W1.1. <font color="#de7802">Seminar.</font> Deep learning for genomics modeling and interpretation<a class="headerlink" href="#s2w11-seminar-deep-learning-for-genomics-modeling-and-interpretation" title="Permanent link">&para;</a></h2>
+<h3 id="1-translatorner-a-transformer-based-model-for-mrna-translation">1. <strong>Translatorner: A Transformer-based Model for mRNA Translation</strong><a class="headerlink" href="#1-translatorner-a-transformer-based-model-for-mrna-translation" title="Permanent link">&para;</a></h3>
+<h4 id="experimental-purpose">Experimental Purpose:<a class="headerlink" href="#experimental-purpose" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Scientific Question</strong>: The study aims to understand the regulation of mRNA translation and its impact on protein abundance, which is crucial for understanding disease mechanisms. The central dogma of biology (DNA → RNA → Protein) is well-known, but the correlation between mRNA and protein levels is not perfect (0.39 to 0.79). The study seeks to model how mRNA translation is regulated and how this regulation affects protein levels.</li>
+<li><strong>Experimental Design</strong>: The study uses a Transformer-based deep learning model (Translatorner) to predict ribosome profiling (translatome) from RNA-seq data and gene sequences. The model is trained on human data and tested on both human and mouse datasets to evaluate its ability to generalize across species.</li>
+</ul>
+<h4 id="model-system">Model System:<a class="headerlink" href="#model-system" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Model System</strong>: The study uses human and mouse genomic data. These systems are appropriate because they are well-studied, and the conservation of regulatory mechanisms between humans and mice allows for cross-species validation.</li>
+<li><strong>Alternative Model Systems</strong>: Other model systems like yeast or zebrafish could be used, but they may lack the complexity and relevance to human diseases. However, they are cheaper and easier to manipulate.</li>
+<li><strong>Ethical Considerations</strong>: Using human genomic data requires ethical approval, especially when dealing with patient data. The study likely adheres to ethical guidelines for genomic research.</li>
+</ul>
+<h4 id="measurement-approach">Measurement Approach:<a class="headerlink" href="#measurement-approach" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Techniques</strong>: The study uses ribosome profiling (Ribo-seq) and RNA-seq data. These are quantitative techniques that measure translation efficiency and mRNA abundance, respectively.</li>
+<li><strong>Method Choice</strong>: Deep learning models (Transformers) were chosen because they can capture long-range dependencies in sequences, which is crucial for understanding translation regulation.</li>
+<li><strong>Technical Replicates</strong>: The study likely uses multiple replicates to ensure robustness, though the exact number is not specified.</li>
+<li><strong>Potential Biases</strong>: Biases could arise from data normalization or sequencing depth. These are minimized by using standardized protocols and cross-validation.</li>
+</ul>
+<h4 id="group-setting">Group Setting:<a class="headerlink" href="#group-setting" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Experimental Groups</strong>: The model is trained on human data and tested on both human and mouse data. The groups are defined by cell types (e.g., epithelial cells, brain cells).</li>
+<li><strong>Negative Controls</strong>: The study compares Translatorner with state-of-the-art models (e.g., Riboformer) to ensure that the improvements are not due to overfitting.</li>
+<li><strong>Biological Replicates</strong>: The study uses multiple datasets (e.g., K562, epithelial cells) to ensure generalizability.</li>
+<li><strong>Modified Group Design</strong>: A dose-response experiment could be added to study how varying levels of mRNA affect translation efficiency.</li>
+</ul>
+<h4 id="data-analysis-presentation">Data Analysis &amp; Presentation:<a class="headerlink" href="#data-analysis-presentation" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Data Processing</strong>: Raw data from Ribo-seq and RNA-seq are processed using deep learning models. The data are quantitative, and the model outputs are compared with experimental data.</li>
+<li><strong>Statistical Tests</strong>: The study uses Pearson correlation coefficients (PCC) to compare predicted and observed ribosome profiling data.</li>
+<li><strong>Data Presentation</strong>: Results are presented using scatter plots and enrichment plots, which are clear and free of misleading scaling.</li>
+<li><strong>Confirmation</strong>: The model's predictions are validated using cross-species data and in silico mutagenesis, which confirms the robustness of the results.</li>
+</ul>
+<h3 id="2-transrbp-modeling-rbp-binding-and-its-interaction-with-m6a">2. <strong>TransRBP: Modeling RBP Binding and Its Interaction with m6A</strong><a class="headerlink" href="#2-transrbp-modeling-rbp-binding-and-its-interaction-with-m6a" title="Permanent link">&para;</a></h3>
+<h4 id="experimental-purpose_1">Experimental Purpose:<a class="headerlink" href="#experimental-purpose_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Scientific Question</strong>: The study aims to understand how RNA-binding proteins (RBPs) interact with m6A modifications and how these interactions affect RNA metabolism and disease.</li>
+<li><strong>Experimental Design</strong>: The study develops a deep learning model (TransRBP) to predict RBP binding sites and their interaction with m6A. The model is trained on RNA sequences and tested for its ability to identify disease-related variants that alter RBP binding.</li>
+</ul>
+<h4 id="model-system_1">Model System:<a class="headerlink" href="#model-system_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Model System</strong>: The study uses human genomic data, focusing on RBPs and m6A modifications. This system is appropriate because m6A is the most prevalent mRNA modification and plays a critical role in RNA metabolism.</li>
+<li><strong>Alternative Model Systems</strong>: Other systems like yeast or bacteria could be used, but they lack the complexity of m6A regulation seen in higher eukaryotes.</li>
+<li><strong>Ethical Considerations</strong>: Similar to Translatorner, the use of human genomic data requires ethical approval.</li>
+</ul>
+<h4 id="measurement-approach_1">Measurement Approach:<a class="headerlink" href="#measurement-approach_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Techniques</strong>: The study uses RNA-seq data and m6A sequencing data. These are quantitative techniques that measure RNA abundance and m6A modifications.</li>
+<li><strong>Method Choice</strong>: Deep learning models (Transformers) were chosen because they can capture complex interactions between RNA sequences and RBPs.</li>
+<li><strong>Technical Replicates</strong>: The study likely uses multiple replicates, though the exact number is not specified.</li>
+<li><strong>Potential Biases</strong>: Biases could arise from sequencing errors or incomplete annotation of m6A sites. These are minimized by using high-quality datasets and cross-validation.</li>
+</ul>
+<h4 id="group-setting_1">Group Setting:<a class="headerlink" href="#group-setting_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Experimental Groups</strong>: The model is trained on RNA sequences and tested for its ability to predict RBP binding sites. The groups are defined by disease types (e.g., Parkinson’s disease, autism).</li>
+<li><strong>Negative Controls</strong>: The study compares TransRBP with existing models to ensure that the improvements are not due to overfitting.</li>
+<li><strong>Biological Replicates</strong>: The study uses multiple datasets to ensure generalizability.</li>
+<li><strong>Modified Group Design</strong>: A dose-response experiment could be added to study how varying levels of m6A affect RBP binding.</li>
+</ul>
+<h4 id="data-analysis-presentation_1">Data Analysis &amp; Presentation:<a class="headerlink" href="#data-analysis-presentation_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Data Processing</strong>: Raw data from RNA-seq and m6A sequencing are processed using deep learning models. The data are quantitative, and the model outputs are compared with experimental data.</li>
+<li><strong>Statistical Tests</strong>: The study uses Pearson correlation coefficients (PCC) to compare predicted and observed RBP binding data.</li>
+<li><strong>Data Presentation</strong>: Results are presented using scatter plots and enrichment plots, which are clear and free of misleading scaling.</li>
+<li><strong>Confirmation</strong>: The model's predictions are validated using in silico mutagenesis and experimental data, which confirms the robustness of the results.</li>
+</ul>
+<h3 id="general-observations">General Observations:<a class="headerlink" href="#general-observations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Both studies leverage deep learning models (Transformers) to address complex questions in genomics. The models are trained on large datasets and validated using cross-species data and in silico experiments.</li>
+<li>The studies highlight the importance of model interpretability, using techniques like in silico mutagenesis and gradient-based interpretation to understand the contribution of different input modalities.</li>
+<li>The results have significant implications for understanding disease mechanisms, particularly in the context of translation regulation and RBP interactions with m6A modifications  </li>
+</ul>
+<hr />
+<h2 id="s2w21-molecular-interactions-from-structure-perspective">S2.W2.1. Molecular interactions from structure perspective<a class="headerlink" href="#s2w21-molecular-interactions-from-structure-perspective" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="s2w22-seminar-empowering-precision-medicine-with-computational-biology">S2.W2.2. <font color="#de7802">Seminar.</font> Empowering precision medicine with computational biology<a class="headerlink" href="#s2w22-seminar-empowering-precision-medicine-with-computational-biology" title="Permanent link">&para;</a></h2>
+<h3 id="1-resa-de-novo-identification-of-expressed-cancer-somatic-mutations">1. <strong>RESA: De Novo Identification of Expressed Cancer Somatic Mutations</strong><a class="headerlink" href="#1-resa-de-novo-identification-of-expressed-cancer-somatic-mutations" title="Permanent link">&para;</a></h3>
+<h4 id="experimental-purpose_2">Experimental Purpose:<a class="headerlink" href="#experimental-purpose_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Scientific Question</strong>: The study aims to identify somatic mutations in cancer from single-cell RNA sequencing (scRNA-seq) data, which is challenging due to the low abundance of mutations and the complexity of distinguishing them from germline variants and RNA editing events.</li>
+<li><strong>Experimental Design</strong>: The RESA (RNA Editing and Somatic Mutation Annotation) tool is developed to filter out germline variants and RNA editing sites, allowing for the confident identification of somatic mutations. The tool uses joint logistic regression to classify somatic SNVs (single nucleotide variants) based on quality and sequence features.</li>
+</ul>
+<h4 id="model-system_2">Model System:<a class="headerlink" href="#model-system_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Model System</strong>: Human cancer samples are used, as they provide a direct link to human disease and are relevant for precision medicine.</li>
+<li><strong>Alternative Model Systems</strong>: Mouse models or cell lines could be used, but they may not fully capture the complexity of human cancers.</li>
+<li><strong>Ethical Considerations</strong>: Using human cancer samples requires ethical approval, especially when dealing with patient data.</li>
+</ul>
+<h4 id="measurement-approach_2">Measurement Approach:<a class="headerlink" href="#measurement-approach_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Techniques</strong>: scRNA-seq is used to measure gene expression and identify somatic mutations. The data are quantitative, allowing for precise identification of low-frequency mutations.</li>
+<li><strong>Method Choice</strong>: RESA was chosen because it can filter out germline variants and RNA editing events, which are common sources of noise in scRNA-seq data.</li>
+<li><strong>Technical Replicates</strong>: The study likely uses multiple replicates to ensure robustness, though the exact number is not specified.</li>
+<li><strong>Potential Biases</strong>: Biases could arise from sequencing errors or incomplete annotation of RNA editing sites. These are minimized by using high-quality datasets and cross-validation.</li>
+</ul>
+<h4 id="group-setting_2">Group Setting:<a class="headerlink" href="#group-setting_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Experimental Groups</strong>: The study compares cancer samples with matched normal samples to identify somatic mutations.</li>
+<li><strong>Negative Controls</strong>: Germline variants and RNA editing sites are used as negative controls to ensure that only somatic mutations are identified.</li>
+<li><strong>Biological Replicates</strong>: Multiple cancer samples are used to ensure generalizability.</li>
+<li><strong>Modified Group Design</strong>: A dose-response experiment could be added to study how varying levels of mutations affect cancer progression.</li>
+</ul>
+<h4 id="data-analysis-presentation_2">Data Analysis &amp; Presentation:<a class="headerlink" href="#data-analysis-presentation_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Data Processing</strong>: Raw scRNA-seq data are processed using RESA to identify somatic mutations. The data are quantitative, and the model outputs are compared with experimental data.</li>
+<li><strong>Statistical Tests</strong>: Joint logistic regression is used to classify somatic SNVs based on quality and sequence features.</li>
+<li><strong>Data Presentation</strong>: Results are presented using tables and plots, which are clear and free of misleading scaling.</li>
+<li><strong>Confirmation</strong>: The model's predictions are validated using matched normal samples and RNA editing databases, confirming the robustness of the results.</li>
+</ul>
+<h3 id="2-magpie-pathogenic-prediction-for-multiple-variant-types">2. <strong>MAGPIE: Pathogenic Prediction for Multiple Variant Types</strong><a class="headerlink" href="#2-magpie-pathogenic-prediction-for-multiple-variant-types" title="Permanent link">&para;</a></h3>
+<h4 id="experimental-purpose_3">Experimental Purpose:<a class="headerlink" href="#experimental-purpose_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Scientific Question</strong>: The study aims to predict the pathogenicity of multiple types of genetic variants (e.g., frameshift, non-synonymous, splice site) using a machine learning approach.</li>
+<li><strong>Experimental Design</strong>: MAGPIE (Multimodal Analysis Generated Pathogenic Impact Evaluator) uses gradient boosting methods to predict the pathogenicity of variants based on multimodal feature annotations, including functional effects, spatial effects, and conservation.</li>
+</ul>
+<h4 id="model-system_3">Model System:<a class="headerlink" href="#model-system_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Model System</strong>: Human genomic data are used, as they are directly relevant to human diseases and precision medicine.</li>
+<li><strong>Alternative Model Systems</strong>: Model organisms like mice could be used, but they may not fully capture the complexity of human genetic variation.</li>
+<li><strong>Ethical Considerations</strong>: Using human genomic data requires ethical approval, especially when dealing with patient data.</li>
+</ul>
+<h4 id="measurement-approach_3">Measurement Approach:<a class="headerlink" href="#measurement-approach_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Techniques</strong>: Variant annotation and machine learning are used to predict pathogenicity. The data are quantitative, allowing for precise predictions.</li>
+<li><strong>Method Choice</strong>: Gradient boosting was chosen because it can handle complex, multimodal data and provide accurate predictions.</li>
+<li><strong>Technical Replicates</strong>: The study likely uses multiple replicates to ensure robustness, though the exact number is not specified.</li>
+<li><strong>Potential Biases</strong>: Biases could arise from incomplete annotation or imbalanced datasets. These are minimized by using high-quality datasets and cross-validation.</li>
+</ul>
+<h4 id="group-setting_3">Group Setting:<a class="headerlink" href="#group-setting_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Experimental Groups</strong>: The study compares pathogenic variants with benign variants to train the model.</li>
+<li><strong>Negative Controls</strong>: Benign variants are used as negative controls to ensure that the model can distinguish between pathogenic and non-pathogenic variants.</li>
+<li><strong>Biological Replicates</strong>: Multiple datasets are used to ensure generalizability.</li>
+<li><strong>Modified Group Design</strong>: A dose-response experiment could be added to study how varying levels of variant pathogenicity affect disease outcomes.</li>
+</ul>
+<h4 id="data-analysis-presentation_3">Data Analysis &amp; Presentation:<a class="headerlink" href="#data-analysis-presentation_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Data Processing</strong>: Raw variant data are processed using MAGPIE to predict pathogenicity. The data are quantitative, and the model outputs are compared with experimental data.</li>
+<li><strong>Statistical Tests</strong>: Gradient boosting methods are used to predict pathogenicity based on multimodal feature annotations.</li>
+<li><strong>Data Presentation</strong>: Results are presented using tables and plots, which are clear and free of misleading scaling.</li>
+<li><strong>Confirmation</strong>: The model's predictions are validated using known pathogenic and benign variants, confirming the robustness of the results.</li>
+</ul>
+<h3 id="3-sptransformer-tissue-specific-splicing-prediction">3. <strong>SpTransformer: Tissue-Specific Splicing Prediction</strong><a class="headerlink" href="#3-sptransformer-tissue-specific-splicing-prediction" title="Permanent link">&para;</a></h3>
+<h4 id="experimental-purpose_4">Experimental Purpose:<a class="headerlink" href="#experimental-purpose_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Scientific Question</strong>: The study aims to predict tissue-specific splicing alterations caused by single nucleotide variants (SNVs) and understand their role in human diseases.</li>
+<li><strong>Experimental Design</strong>: SpTransformer, a Transformer-based deep learning model, is developed to predict splicing alterations in 15 different tissues. The model is trained on RNA-seq data and validated using clinical samples.</li>
+</ul>
+<h4 id="model-system_4">Model System:<a class="headerlink" href="#model-system_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Model System</strong>: Human genomic data are used, as they are directly relevant to human diseases and precision medicine.</li>
+<li><strong>Alternative Model Systems</strong>: Model organisms like mice could be used, but they may not fully capture the complexity of human splicing regulation.</li>
+<li><strong>Ethical Considerations</strong>: Using human genomic data requires ethical approval, especially when dealing with patient data.</li>
+</ul>
+<h4 id="measurement-approach_4">Measurement Approach:<a class="headerlink" href="#measurement-approach_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Techniques</strong>: RNA-seq data are used to measure splicing alterations. The data are quantitative, allowing for precise predictions.</li>
+<li><strong>Method Choice</strong>: Transformers were chosen because they can capture long-range dependencies in sequences, which is crucial for understanding splicing regulation.</li>
+<li><strong>Technical Replicates</strong>: The study likely uses multiple replicates to ensure robustness, though the exact number is not specified.</li>
+<li><strong>Potential Biases</strong>: Biases could arise from sequencing errors or incomplete annotation of splicing events. These are minimized by using high-quality datasets and cross-validation.</li>
+</ul>
+<h4 id="group-setting_4">Group Setting:<a class="headerlink" href="#group-setting_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Experimental Groups</strong>: The study compares splicing alterations in different tissues to understand tissue-specific effects.</li>
+<li><strong>Negative Controls</strong>: Non-splicing variants are used as negative controls to ensure that the model can distinguish between splicing and non-splicing events.</li>
+<li><strong>Biological Replicates</strong>: Multiple datasets are used to ensure generalizability.</li>
+<li><strong>Modified Group Design</strong>: A dose-response experiment could be added to study how varying levels of splicing alterations affect tissue function.</li>
+</ul>
+<h4 id="data-analysis-presentation_4">Data Analysis &amp; Presentation:<a class="headerlink" href="#data-analysis-presentation_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Data Processing</strong>: Raw RNA-seq data are processed using SpTransformer to predict splicing alterations. The data are quantitative, and the model outputs are compared with experimental data.</li>
+<li><strong>Statistical Tests</strong>: The study uses z-scores to define tissue-specific splicing alterations and enrichment analysis to identify disease-related genes.</li>
+<li><strong>Data Presentation</strong>: Results are presented using scatter plots and enrichment plots, which are clear and free of misleading scaling.</li>
+<li><strong>Confirmation</strong>: The model's predictions are validated using clinical samples and RNA-seq data, confirming the robustness of the results.</li>
+</ul>
+<h3 id="general-observations_1">General Observations:<a class="headerlink" href="#general-observations_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The studies leverage computational biology and deep learning to address complex questions in genomics, particularly in the context of cancer, genetic variants, and splicing regulation.</li>
+<li>The models are trained on large datasets and validated using cross-species data and experimental data, highlighting their robustness and generalizability.</li>
+<li>The results have significant implications for precision medicine, particularly in the context of cancer diagnosis, genetic variant interpretation, and understanding tissue-specific splicing alterations.</li>
+</ul>
+<hr />
+<h2 id="s2w23-big-data-analysis-dimensionality-reduction">S2.W2.3. Big data analysis - dimensionality reduction<a class="headerlink" href="#s2w23-big-data-analysis-dimensionality-reduction" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="s2w31-large-molecule-de-novo-design-using-antibody-as-an-example">S2.W3.1. Large molecule de-novo design, using antibody as an example<a class="headerlink" href="#s2w31-large-molecule-de-novo-design-using-antibody-as-an-example" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="s2w32-seminar-structural-study-of-epigenetic-regulation-in-transcription">S2.W3.2. <font color="#de7802">Seminar.</font> Structural study of epigenetic regulation in transcription<a class="headerlink" href="#s2w32-seminar-structural-study-of-epigenetic-regulation-in-transcription" title="Permanent link">&para;</a></h2>
+<h3 id="1-experimental-purpose">1. <strong>Experimental Purpose:</strong><a class="headerlink" href="#1-experimental-purpose" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scientific Question</strong>: The study aims to understand how <strong>histone modifications</strong> (e.g., acetylation, methylation) and <strong>chromatin structure</strong> regulate transcription. Specifically, it investigates the structural mechanisms by which histone modifications influence the binding of transcription machinery and the regulation of gene expression.</li>
+<li><strong>Experimental Design</strong>: The study uses <strong>structural biology techniques</strong> (e.g., cryo-EM, X-ray crystallography) to determine the molecular structures of key epigenetic regulators, such as <strong>histone acetyltransferases (HATs)</strong> and <strong>histone deacetylases (HDACs)</strong>, and their interactions with nucleosomes and transcription factors.</li>
+</ul>
+<h3 id="2-model-system">2. <strong>Model System:</strong><a class="headerlink" href="#2-model-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Model System</strong>: The study primarily uses <strong>yeast</strong> and <strong>human cells</strong>, as these systems are well-characterized and provide a direct link to eukaryotic transcription regulation. The study focuses on the <strong>SAGA complex</strong>, a well-known HAT complex involved in transcription regulation.</li>
+<li><strong>Why This System?</strong>: Yeast and human cells are appropriate for this study because they allow for the manipulation of specific histone modifications and chromatin structures. The SAGA complex is relevant because it plays a key role in regulating transcription through histone acetylation.</li>
+<li><strong>Alternative Model Systems</strong>: Other model systems like <strong>bacteria</strong> or <strong>plants</strong> could be used, but they lack the complexity of eukaryotic chromatin and histone modifications.</li>
+<li><strong>Ethical Considerations</strong>: Using human cell lines requires ethical approval, especially when dealing with patient-derived samples. The study likely adheres to ethical guidelines for genomic research.</li>
+</ul>
+<h3 id="3-measurement-approach">3. <strong>Measurement Approach:</strong><a class="headerlink" href="#3-measurement-approach" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Techniques</strong>: The study employs several techniques:<ul>
+<li><strong>Cryo-electron microscopy (cryo-EM)</strong>: To determine the structures of epigenetic regulators (e.g., SAGA complex) and their interactions with nucleosomes.</li>
+<li><strong>X-ray crystallography</strong>: To obtain high-resolution structures of specific histone modifications and their interactions with transcription factors.</li>
+<li><strong>Biochemical assays</strong>: To study the functional roles of histone modifications in transcription regulation.</li>
+<li><strong>Chromatin immunoprecipitation (ChIP)</strong>: To study the binding of transcription factors to histone-modified chromatin.</li>
+</ul>
+</li>
+<li><strong>Why These Methods?</strong>: Cryo-EM and X-ray crystallography were chosen because they allow for the visualization of molecular structures at atomic resolution, which is crucial for understanding the mechanisms of epigenetic regulation. Biochemical assays and ChIP were used to study the functional roles of histone modifications in transcription.</li>
+<li><strong>Technical Replicates</strong>: The study likely uses multiple replicates (e.g., n=3 or more) to ensure the robustness of the structural data.</li>
+<li><strong>Potential Biases</strong>: Biases could arise from sample preparation or data interpretation. These are minimized by using standardized protocols and cross-validation with biochemical assays.</li>
+</ul>
+<h3 id="4-group-setting">4. <strong>Group Setting:</strong><a class="headerlink" href="#4-group-setting" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Experimental Groups</strong>: The study compares several groups:<ul>
+<li><strong>Wild-type cells</strong> vs. <strong>cells with specific histone modifications</strong>: To study the effects of histone modifications on transcription.</li>
+<li><strong>Cells with intact SAGA complex</strong> vs. <strong>cells with SAGA complex mutations</strong>: To study the role of the SAGA complex in transcription regulation.</li>
+<li><strong>Cells treated with HDAC inhibitors</strong> vs. <strong>untreated cells</strong>: To study the effects of histone deacetylation on transcription.</li>
+</ul>
+</li>
+<li><strong>Negative Controls</strong>: Cells without specific histone modifications or with intact SAGA complex serve as negative controls to study the effects of histone modifications and SAGA complex mutations.</li>
+<li><strong>Biological Replicates</strong>: Multiple samples are used in each group (e.g., n=3 or more) to ensure reproducibility.</li>
+<li><strong>Modified Group Design</strong>: A dose-response experiment could be added to study how varying levels of histone modifications or HDAC inhibitors affect transcription.</li>
+</ul>
+<h3 id="5-data-analysis-presentation">5. <strong>Data Analysis &amp; Presentation:</strong><a class="headerlink" href="#5-data-analysis-presentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Data Processing</strong>: Raw structural data from cryo-EM and X-ray crystallography are processed to generate 3D models of the molecular structures. Biochemical and ChIP data are analyzed to study the functional roles of histone modifications in transcription.</li>
+<li><strong>Statistical Tests</strong>: The study uses statistical validation methods (e.g., cross-validation, resolution assessment) to ensure the accuracy of the structural models. Differential binding analysis is performed to identify key transcription factors regulated by histone modifications.</li>
+<li><strong>Data Presentation</strong>: Results are presented using <strong>3D structural models</strong>, <strong>graphs</strong>, and <strong>tables</strong>, which are clear and free of misleading scaling. For example, the study uses <strong>electron density maps</strong> to show the structures of histone modifications and <strong>bar graphs</strong> to compare transcription factor binding.</li>
+<li><strong>Confirmation</strong>: The structural findings are confirmed using <strong>biochemical assays</strong> and <strong>functional studies</strong>, which validate the proposed mechanisms of epigenetic regulation.</li>
+</ul>
+<h3 id="general-observations_2">General Observations:<a class="headerlink" href="#general-observations_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The study provides a detailed understanding of how <strong>histone modifications</strong> and <strong>chromatin structure</strong> regulate transcription through the <strong>SAGA complex</strong> and other epigenetic regulators.</li>
+<li>The findings highlight the importance of <strong>histone acetylation</strong> and <strong>deacetylation</strong> in regulating gene expression and suggest potential therapeutic targets for diseases linked to epigenetic dysregulation.</li>
+<li>The results have significant implications for understanding the molecular basis of <strong>epigenetic regulation</strong> and developing therapies for <strong>cancer</strong> and other diseases.</li>
+</ul>
+<hr />
+<h2 id="s2w41-single-cell-spatial-temporal-multi-omics">S2.W4.1. Single-cell spatial-temporal multi-omics<a class="headerlink" href="#s2w41-single-cell-spatial-temporal-multi-omics" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="s2w42-survival-analysis">S2.W4.2. Survival analysis<a class="headerlink" href="#s2w42-survival-analysis" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="s2w43-seminar-host-microbial-interactions-and-lipid-metabolism">S2.W4.3. <font color="#de7802">Seminar.</font> Host-microbial Interactions and Lipid Metabolism<a class="headerlink" href="#s2w43-seminar-host-microbial-interactions-and-lipid-metabolism" title="Permanent link">&para;</a></h2>
+<h3 id="1-experimental-purpose_1">1. <strong>Experimental Purpose:</strong><a class="headerlink" href="#1-experimental-purpose_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scientific Question</strong>: The study aims to understand how the gut microbiota regulates host lipid metabolism and how dysbiosis (imbalance in the microbiota) contributes to metabolic disorders such as obesity and diabetes. Specifically, the study investigates the role of <strong>Nfil3</strong>, <strong>Hdac3</strong>, and <strong>Snhg9</strong> in mediating the effects of the microbiota on lipid metabolism.</li>
+<li><strong>Experimental Design</strong>: The study uses <strong>germ-free (GF) mice</strong> and <strong>conventional (CV) mice</strong> to identify key genes regulated by the microbiota. The researchers then use <strong>gene knockout models</strong> and <strong>bacterial gavage</strong> to study the functional roles of these genes and specific bacterial strains in lipid metabolism.</li>
+</ul>
+<h3 id="2-model-system_1">2. <strong>Model System:</strong><a class="headerlink" href="#2-model-system_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Model System</strong>: The study primarily uses <strong>germ-free (GF) mice</strong> and <strong>conventional (CV) mice</strong>. These models are ideal for studying the effects of the microbiota on host metabolism because GF mice lack a gut microbiota, allowing researchers to isolate the effects of specific bacterial strains.</li>
+<li><strong>Why This System?</strong>: Mice are appropriate for this study because their gut microbiota and lipid metabolism are well-characterized, and they allow for precise genetic manipulation. The use of GF mice is particularly relevant because it enables researchers to study the effects of specific bacterial strains on host metabolism.</li>
+<li><strong>Alternative Model Systems</strong>: Other model systems like <strong>zebrafish</strong> or <strong>Drosophila</strong> could be used, but they lack the complexity of mammalian lipid metabolism and gut microbiota interactions.</li>
+<li><strong>Ethical Considerations</strong>: Using mice requires ethical approval, especially when dealing with germ-free conditions and dietary interventions. The study likely adheres to ethical guidelines for animal research.</li>
+</ul>
+<h3 id="3-measurement-approach_1">3. <strong>Measurement Approach:</strong><a class="headerlink" href="#3-measurement-approach_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Techniques</strong>: The study employs several techniques:<ul>
+<li><strong>RNA sequencing (RNA-seq)</strong>: To identify genes regulated by the microbiota.</li>
+<li><strong>Biochemical assays</strong>: To measure lipid levels and metabolic activity.</li>
+<li><strong>Gene knockout models</strong>: To study the functional roles of <strong>Nfil3</strong>, <strong>Hdac3</strong>, and <strong>Snhg9</strong> in lipid metabolism.</li>
+<li><strong>Bacterial gavage</strong>: To introduce specific bacterial strains (e.g., <strong>Lactobacillus plantarum Pm001</strong>) into GF mice and study their effects on lipid metabolism.</li>
+</ul>
+</li>
+<li><strong>Why These Methods?</strong>: RNA-seq was chosen to identify genes regulated by the microbiota, while biochemical assays were used to measure lipid levels and metabolic activity. Gene knockout models and bacterial gavage were used to study the functional roles of specific genes and bacterial strains.</li>
+<li><strong>Technical Replicates</strong>: The study likely uses multiple replicates (e.g., n=3 or more) to ensure the robustness of the data.</li>
+<li><strong>Potential Biases</strong>: Biases could arise from differences in mouse strains or dietary conditions. These are minimized by using standardized protocols and controls.</li>
+</ul>
+<h3 id="4-group-setting_1">4. <strong>Group Setting:</strong><a class="headerlink" href="#4-group-setting_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Experimental Groups</strong>: The study compares several groups:<ul>
+<li><strong>Germ-free (GF) mice</strong> vs. <strong>conventional (CV) mice</strong>: To study the effects of the microbiota on lipid metabolism.</li>
+<li><strong>Gene knockout mice</strong> (e.g., <strong>Nfil3ΔIEC</strong>, <strong>Hdac3ΔIEC</strong>) vs. <strong>wild-type mice</strong>: To study the functional roles of specific genes in lipid metabolism.</li>
+<li><strong>Mice treated with specific bacterial strains</strong> (e.g., <strong>Lactobacillus plantarum Pm001</strong>) vs. <strong>control mice</strong>: To study the effects of specific bacterial strains on lipid metabolism.</li>
+</ul>
+</li>
+<li><strong>Negative Controls</strong>: GF mice and wild-type mice serve as negative controls to study the effects of the microbiota and gene knockouts on lipid metabolism.</li>
+<li><strong>Biological Replicates</strong>: Multiple mice are used in each group (e.g., n=8) to ensure reproducibility.</li>
+<li><strong>Modified Group Design</strong>: A dose-response experiment could be added to study how varying levels of specific bacterial strains or gene expression affect lipid metabolism.</li>
+</ul>
+<h3 id="5-data-analysis-presentation_1">5. <strong>Data Analysis &amp; Presentation:</strong><a class="headerlink" href="#5-data-analysis-presentation_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Data Processing</strong>: Raw RNA-seq data are processed to identify differentially expressed genes. Biochemical data are analyzed to measure lipid levels and metabolic activity.</li>
+<li><strong>Statistical Tests</strong>: The study uses statistical methods (e.g., t-tests, ANOVA) to compare gene expression and lipid levels between groups. Differential expression analysis is performed to identify key genes regulated by the microbiota.</li>
+<li><strong>Data Presentation</strong>: Results are presented using <strong>graphs</strong> and <strong>tables</strong>, which are clear and free of misleading scaling. For example, the study uses <strong>bar graphs</strong> to compare lipid levels and <strong>scatter plots</strong> to show gene expression changes.</li>
+<li><strong>Confirmation</strong>: The findings are confirmed using <strong>gene knockout models</strong> and <strong>bacterial gavage</strong>, which validate the role of specific genes and bacterial strains in regulating lipid metabolism.</li>
+</ul>
+<h3 id="general-observations_3">General Observations:<a class="headerlink" href="#general-observations_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The study provides a detailed understanding of how the gut microbiota regulates host lipid metabolism through specific genes (<strong>Nfil3</strong>, <strong>Hdac3</strong>, and <strong>Snhg9</strong>).</li>
+<li>The findings highlight the importance of <strong>Lactobacillus plantarum Pm001</strong> in promoting <strong>Snhg9</strong> expression and protecting mice from diet-induced obesity.</li>
+<li>The results have significant implications for understanding the molecular basis of <strong>microbiota-host interactions</strong> and developing <strong>microbiota-based therapies</strong> for metabolic disorders.</li>
+</ul>
+<hr />
+<h2 id="s2w51-binary-trees-and-random-forest">S2.W5.1. Binary trees and Random Forest<a class="headerlink" href="#s2w51-binary-trees-and-random-forest" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="s2w52-seminar-how-to-do-a-scientific-project-step-by-step">S2.W5.2. <font color="#de7802">Seminar.</font> How to Do a Scientific Project Step-by-step<a class="headerlink" href="#s2w52-seminar-how-to-do-a-scientific-project-step-by-step" title="Permanent link">&para;</a></h2>
+<h3 id="1-experimental-purpose_2">1. <strong>Experimental Purpose:</strong><a class="headerlink" href="#1-experimental-purpose_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scientific Question</strong>: The study aims to understand how <strong>IL-33</strong>, a cytokine produced by <strong>PDGFRβ+DPP4+ cells</strong>, regulates cold-induced thermogenesis and the formation of beige adipocytes in white adipose tissue (WAT). Specifically, the study investigates whether IL-33 expression is induced by cold exposure and how it contributes to thermogenic remodeling.</li>
+<li><strong>Experimental Design</strong>: The study uses a combination of <strong>RNA sequencing (RNA-seq)</strong>, <strong>flow cytometry</strong>, <strong>histology</strong>, and <strong>CRISPR/Cas9 gene editing</strong> to explore the role of IL-33 in cold-induced thermogenesis. The researchers first identify IL-33 as a key player in the process and then investigate the molecular mechanisms underlying its regulation.</li>
+</ul>
+<h3 id="2-model-system_2">2. <strong>Model System:</strong><a class="headerlink" href="#2-model-system_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Model System</strong>: The study primarily uses <strong>mouse models</strong>, particularly <strong>PDGFRβ+DPP4+ cells</strong> in inguinal white adipose tissue (iWAT). These cells are identified as the main source of IL-33 in iWAT. The study also uses <strong>germ-free (GF)</strong> and <strong>conventional (CV)</strong> mice to study the effects of cold exposure on adipose tissue.</li>
+<li><strong>Why This System?</strong>: Mice are appropriate for this study because they allow for the manipulation of specific cell populations and genes, and their adipose tissue responds to cold exposure in a manner similar to humans. The use of PDGFRβ+DPP4+ cells is relevant because these cells are known to play a role in adipose tissue remodeling.</li>
+<li><strong>Alternative Model Systems</strong>: Other model systems, such as <strong>cell cultures</strong> or <strong>zebrafish</strong>, could be used, but they lack the complexity of in vivo adipose tissue remodeling and the interaction between different cell types.</li>
+<li><strong>Ethical Considerations</strong>: Using mice requires ethical approval, especially when dealing with cold exposure and gene editing. The study likely adheres to ethical guidelines for animal research.</li>
+</ul>
+<h3 id="3-measurement-approach_2">3. <strong>Measurement Approach:</strong><a class="headerlink" href="#3-measurement-approach_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Techniques</strong>: The study employs several techniques:<ul>
+<li><strong>RNA-seq</strong>: To analyze gene expression changes in response to cold exposure.</li>
+<li><strong>Flow cytometry</strong>: To study immune cell populations (e.g., ILC2s) in adipose tissue.</li>
+<li><strong>Histology</strong>: To visualize beige adipocyte formation in adipose tissue.</li>
+<li><strong>CRISPR/Cas9</strong>: To knock out <strong>CREB</strong>, a transcription factor that regulates IL-33 expression.</li>
+<li><strong>Chromatin Immunoprecipitation (ChIP)</strong>: To study the binding of CREB to the IL-33 promoter.</li>
+</ul>
+</li>
+<li><strong>Why These Methods?</strong>: RNA-seq was chosen to identify genes regulated by cold exposure, while flow cytometry and histology were used to study the cellular and tissue-level effects of IL-33. CRISPR/Cas9 and ChIP assays were used to investigate the molecular mechanisms of IL-33 regulation.</li>
+<li><strong>Technical Replicates</strong>: The study likely uses multiple replicates (e.g., n=4 or more) to ensure the robustness of the data.</li>
+<li><strong>Potential Biases</strong>: Biases could arise from differences in mouse strains or environmental conditions. These are minimized by using standardized protocols and controls.</li>
+</ul>
+<h3 id="4-group-setting_2">4. <strong>Group Setting:</strong><a class="headerlink" href="#4-group-setting_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Experimental Groups</strong>: The study compares several groups:<ul>
+<li><strong>Cold-exposed mice (6°C)</strong> vs. <strong>room temperature mice (22°C)</strong>: To study the effects of cold exposure on IL-33 expression and thermogenic remodeling.</li>
+<li><strong>PDGFRβ+DPP4+ cells</strong> vs. <strong>PDGFRβ+DPP4- cells</strong>: To identify the source of IL-33 in iWAT.</li>
+<li><strong>CREB knockout mice</strong> vs. <strong>wild-type mice</strong>: To study the role of CREB in regulating IL-33 expression.</li>
+</ul>
+</li>
+<li><strong>Negative Controls</strong>: Mice kept at room temperature and wild-type mice serve as negative controls to study the effects of cold exposure and CREB knockout.</li>
+<li><strong>Biological Replicates</strong>: Multiple mice are used in each group (e.g., n=8) to ensure reproducibility.</li>
+<li><strong>Modified Group Design</strong>: A dose-response experiment could be added to study how varying levels of cold exposure or IL-33 expression affect thermogenic remodeling.</li>
+</ul>
+<h3 id="5-data-analysis-presentation_2">5. <strong>Data Analysis &amp; Presentation:</strong><a class="headerlink" href="#5-data-analysis-presentation_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Data Processing</strong>: Raw RNA-seq data are processed to identify differentially expressed genes. Flow cytometry and histology data are analyzed to study cell populations and tissue remodeling. ChIP assay data are analyzed to study the binding of CREB to the IL-33 promoter.</li>
+<li><strong>Statistical Tests</strong>: The study uses statistical methods (e.g., t-tests, ANOVA) to compare gene expression, cell populations, and transcription factor binding between groups. Differential expression analysis is performed to identify key genes regulated by cold exposure and IL-33.</li>
+<li><strong>Data Presentation</strong>: Results are presented using <strong>graphs</strong>, <strong>tables</strong>, and <strong>histological images</strong>, which are clear and free of misleading scaling. For example, the study uses <strong>volcano plots</strong> to show differentially expressed genes and <strong>bar graphs</strong> to compare IL-33 expression levels.</li>
+<li><strong>Confirmation</strong>: The findings are confirmed using <strong>gene knockout models</strong> (e.g., CREB knockout) and <strong>functional assays</strong> (e.g., ChIP assays), which validate the role of IL-33 and CREB in cold-induced thermogenesis.</li>
+</ul>
+<h3 id="general-observations_4">General Observations:<a class="headerlink" href="#general-observations_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The study provides a detailed understanding of how <strong>IL-33</strong>, produced by <strong>PDGFRβ+DPP4+ cells</strong>, regulates cold-induced thermogenesis and beige adipocyte formation.</li>
+<li>The findings highlight the importance of <strong>CREB</strong> as a transcription factor that drives IL-33 expression in response to cold exposure.</li>
+<li>The results have significant implications for understanding the molecular basis of <strong>cold-induced thermogenesis</strong> and developing therapies for <strong>obesity</strong> and <strong>metabolic disorders</strong>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": [], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
