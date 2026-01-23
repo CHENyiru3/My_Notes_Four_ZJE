@@ -15,14 +15,14 @@ Thank you all! If you find anything wrong, please tell me and I will fix the err
 Browse the sections below, you can go through everything online:
 
 - [Code Cheatsheet](Code_Cheatsheet/)
-- [BG2](BG2_sum/)
-- [GP2](GP2_sum/)
-- [IBMS3](IBMS3_full/)
-- [MBE3](MBE3_sum/)
-- [PoN3](PoN3_full/)
-- [IID_4](IID_4_full/)
-- [IFBS2](IFBS2_full/)
-- [IN](IN_full/)
+
+- Grade folders:
+	- [Year 1](Year1/)
+	- [Year 2](Year2/)
+	- [Year 3](Year3/)
+	- [Year 4](Year4/)
+
+Note: individual course folders remain at the repo root under `ZJE_Collection/`. Use the Year pages above to find courses grouped by their year.
 
 Notes:
 
