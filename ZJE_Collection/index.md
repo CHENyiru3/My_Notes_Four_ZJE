@@ -4,6 +4,16 @@ Welcome — this site is generated from the repository's ZJE courses folder, fro
 
 If you have any further question, find me in xhs@生成一只头上戴花花的小momo；or via email: c1556613010@outlook.com and you are very welcomed to contribute to this repo, like filling the gap of other courses.
 
+---
+
+<div style="text-align: center; margin: 20px 0; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
+  <p style="font-size: 18px; margin-bottom: 15px;">❤️ If you find this website helpful, please give it a star!</p>
+  <a href="https://github.com/CHENyiru3/My_Notes_Four_ZJE" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">⭐ Star on GitHub</a>
+  <p style="font-size: 14px; margin-top: 10px; color: #666;">Your support means a lot! 🙏</p>
+</div>
+
+---
+
 ## Credit to
 
 - Yicheng_22: contributed to IBMS3
