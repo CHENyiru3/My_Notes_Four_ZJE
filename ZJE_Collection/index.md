@@ -6,6 +6,10 @@ If you have any questions, find me on xhs @生成一只头上戴花花的小momo
 
 ---
 
+Jump to: [Quick Links](#quick-links) | [Year 1](#year-1) | [Year 2](#year-2) | [Year 3](#year-3) | [Year 4](#year-4) | [Contributors](#contributors) | [Contribution Guide](#贡献指南-contribution-guide)
+
+---
+
 ## Quick Links
 
 - [Code Cheatsheet](Code_Cheatsheet/) - Programming references (R, Python, Java, SQL)
@@ -18,30 +22,30 @@ If you have any questions, find me on xhs @生成一只头上戴花花的小momo
 
 ### Year 1
 
-| Course | Description |
-|--------|-------------|
+| Course |  |
+|--------|--|
 | [CHEM1](CHEM1/) | Chemistry |
-| [IBI1](IBI1/) | Introduction to Biomedicine |
-| [IBMS1](IBMS1/) | Biomedical Sciences |
-| [ICMB1](ICMB1/) | Cell & Molecular Biology |
+| [IBI1](IBI1/) | Introduction to Bioinformatics 1 |
+| [IBMS1](IBMS1/) | Integrated Biomedical Sciences 1 |
+| [ICMB1](ICMB1/) | Introduction to Cell & Molecular Biology |
 | [MATH1](MATH1/) | Mathematics |
 
 ### Year 2
 
-| Course | Description |
-|--------|-------------|
-| [ADS2](ADS2/) | Applied Data Science |
-| [BG2](BG2/) | Biochemistry |
-| [BaO2](BaO2/) | Biology of Organs |
-| [DST2](DST2/) | Data Science Tools |
+| Course |  |
+|--------|--|
+| [ADS2](ADS2/) | Applied Data Science 2|
+| [BG2](BG2/) | Biomedicine Genetics 2 |
+| [BaO2](BaO2/) | BaO2 |
+| [DST2](DST2/) |  |
 | [GP2](GP2/) | Genetics & Programming |
 | [IFBS2](IFBS2/) | Integrated Foundations |
 | [MI2](MI2/) | Microbiology |
 
 ### Year 3
 
-| Course | Description |
-|--------|-------------|
+| Course |  |
+|--------|--|
 | [BMI3](BMI3/) | Biomedical Informatics |
 | [CBSB3](CBSB3/) | Computational Biology |
 | [IBMS3](IBMS3/) | Biomedical Sciences |
@@ -51,8 +55,8 @@ If you have any questions, find me on xhs @生成一只头上戴花花的小momo
 
 ### Year 4
 
-| Course | Description |
-|--------|-------------|
+| Course |  |
+|--------|--|
 | [BIA4](BIA4/) | Biomedical Imaging |
 | [IBMS4](IBMS4/) | Biomedical Sciences |
 | [IID_4](IID_4/) | Integrated iGEM Design |
