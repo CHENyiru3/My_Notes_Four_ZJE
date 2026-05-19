@@ -2,6 +2,11 @@
 
 我是ZJE 22级的yr同学，希望仓库能帮到你。如果你也想为本仓库的持续发展做出贡献，欢迎随时pull request，或者和我联系帮忙整理！只要有时间都会两日内进行处理。
 
+# 下一步的想法
+听说学院的代码课很多允许考试时候使用online AI甚至agent了。虽然我本人对此可操作性和公平性表示一定怀疑，但是从应试的角度来说，资料的收集和Skill蒸馏似乎是一个有效的方法。关于skill，请查看Claude Code的官方网站说明：https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+
+简而言之，将考试需要的代码模块和流程提前distill to skill bunble，考试的时候直接加载安装，基本完成了考试的一半。我怀疑规则制定者很可能还以为目前AI停留在页面对话的时代。算了，anyway，欢迎同学沿着类似思路思考，如果有发布skill的想法可以联系我，我后续应该会抽空专门开一个页面提供agent skill for exam.
+
 # 贡献指南
 同学，你终于也要迈出贡献到开源社区的这伟大一步了！感谢你的支持！在此之前，请先阅读：
 
