@@ -1416,6 +1416,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1432,6 +1450,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可以直接提交的内容
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不直接提交到网站仓库的内容
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        内容边界
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pr-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PR Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1456,6 +1537,58 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可以直接提交的内容
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不直接提交到网站仓库的内容
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        内容边界
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pr-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PR Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1484,34 +1617,33 @@
 
 
 <h1 id="contributing">CONTRIBUTING（贡献指南）<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h1>
-<p>谢谢你想为本仓库贡献笔记和资料！为保持内容整洁与可用性，请按下面步骤和约定提交：</p>
+<p>同学，你终于也要迈出贡献到开源社区的这伟大一步了！2026-5-21 进行了网站重构，发生了较大变动。</p>
+<p>网站仅仅作为资源的前端；资源等实际内容被分别存档到 GitHub repo，存放小的文件（pdf、md），以及一个统一管理的 OneDrive Cloud Folder，存放所有的资源文件。</p>
+<h2 id="_1">可以直接提交的内容<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ol>
-<li>基本流程 / Basic flow</li>
-<li>Fork 本仓库，创建 feature 分支（<code>notes/&lt;course&gt;-&lt;yourname&gt;-&lt;year&gt;</code>）。</li>
-<li>在你的分支中添加或修改文件，使用 <code>templates/note_template.md</code> 作为笔记模板。</li>
-<li>
-<p>提交并发起 Pull Request，填写 PR 模板（.github/PULL_REQUEST_TEMPLATE.md）。</p>
-</li>
-<li>
-<p>文件与命名规范 / File &amp; naming conventions</p>
-</li>
-<li>笔记文件：保存在对应课程目录下，文件名应包含课程名 + 作者后缀，例如 <code>Topic 1 Innate Immune system (zl_2023).md</code>。</li>
-<li>文件夹资源：请包含贡献者标识与年份，并交给维护者整理为 OneDrive folder bundle。</li>
+<li><strong>Markdown 笔记</strong>：网站原生支持显示。请把笔记放到对应课程目录，建议文件名包含课程名、主题和贡献者标识。</li>
+<li><strong>PDF 或较小的公开资源</strong>：欢迎直接添加文件到 <a href="https://github.com/CHENyiru3/awesome_ZJE_resource">awesome_ZJE_resource</a>。这个仓库是专门存放资源的，理论上可以在线添加（虽然更推荐 clone 后拖进来然后正常 pull request），此时系统会自动添加你到 contributor。</li>
+<li><strong>如果觉得比较麻烦</strong>：可以联系网站维护者，把文件发送过来后，网站维护者会进行手动上传和更新。这类上传就是 GitHub 镜像，网站就可以直接下载了！</li>
 </ol>
-<p>重要：本仓库不再接收 ZIP/PDF/DOCX 等资源文件本体（太大，不适合放在 GitHub）。</p>
+<h2 id="_2">不直接提交到网站仓库的内容<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>DOCX/PPTX/XLSX/ZIP/ONENOTE 等资源文件入口转到 OneDrive</strong>：不是说不接受这类格式，只是通常这类格式第一可能很大，第二可能有些专有格式。允许公开分享后，网站会通过 manifest 展示可用下载路线：适合 GitHub 镜像的资源会显示 GitHub 链接，同时保留 OneDrive 文件夹入口；大型或混合格式（onenote 或者思维导图等软件资源）优先通过 OneDrive 浏览。</p>
+<p>此时最好的方法有两个，第一个，是直接上传到你自己的某一个云盘，确保共享链接后，可以写一个简单的概述，然后把概述和链接发送给我。第二个，是和我联系，文件传输给我后，我会帮你整理到统一的 OneDrive 资源库（通常更推荐，因为我会进行统一整理，OneDrive 库还是比较大的）。</p>
+<h2 id="_3">内容边界<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>我想贡献课上的作业和期末考试内容，可以吗</strong>：很遗憾，这个其实是一个学校不太允许的事，为了网站持续运行，暂时不支持公开，也请不要因此原因联系网站管理者。推荐联系比较熟悉了的学长学姐。本网站主要欢迎大家分享期末总结的笔记，或者课程中学习总结的笔记。</li>
+<li><strong>我没有整理笔记，但是上课我记录很多</strong>：零碎的上课的记录等，可能网站收录优先度不是很高，因为信息不集中的话比较难以用于整理和快速复习（大部分同学诉求还是找个笔记速通）。当然，我也很乐意存档到 OneDrive 中，如果有同学有需要，细致的笔记也是很有帮助的。</li>
+<li><strong>我很想贡献，但是不知道该怎么做</strong>：没事，欢迎联系我，有任何不明白的地方或者你想分享课程之外的知识笔记！比如说，Coding 考试的一些窍门之类的，也很欢迎分享投稿。</li>
+<li><strong>课程笔记重复了</strong>：是的，随着贡献者越来越多，这是肯定会发生的。但是我相信没有任何人的笔记是完美的，反过来说，不管谁提供笔记，总能带来新的视角！网站已经在尽力建设分类体系。其实还是缺少了很多的，我也非常希望能补全网站的空白。</li>
+</ol>
+<h2 id="pr-checklist">PR Checklist<a class="headerlink" href="#pr-checklist" title="Permanent link">&para;</a></h2>
 <ul>
-<li>请将资源文件交给维护者整理到统一的 OneDrive 资源库中。</li>
-<li>For resource files, send the files or cloud link to the maintainer instead of committing the files to GitHub.</li>
-<li>维护者会在内部资源清单中补充条目/状态，并在 release 后填入公开下载路线。适合镜像的资源会显示 GitHub 链接，同时保留 OneDrive 文件夹入口；大型或混合格式资源优先使用 OneDrive。</li>
-<li>
-<p>如果是文件夹资源，请在 <code>ZJE_Collection/zip_contents/</code> 中添加对应的“内容页”（可写明文件夹内包含哪些文件，或课程范围）。</p>
-</li>
-<li>
-<p>如果包含一些比较难以网站直接读取的格式，请作为 OneDrive 文件夹资源交给维护者整理。如果特别希望直接在网上阅读，md 格式最好。</p>
-</li>
+<li>Fork 本仓库，创建 feature 分支，例如 <code>notes/&lt;course&gt;-&lt;yourname&gt;-&lt;year&gt;</code>。</li>
+<li>使用 <code>templates/note_template.md</code> 作为笔记模板。</li>
+<li>Markdown 图片不要只保留本地路径；请使用可公开访问的图片链接或让维护者协助整理。</li>
+<li>如果是资源文件，请优先提交到 <code>awesome_ZJE_resource</code>，或者发送文件/云盘链接给维护者。</li>
+<li>如果是文件夹资源，请附上一个简单描述，说明课程、贡献者、包含哪些文件，以及更适合 GitHub 镜像还是 OneDrive 浏览。</li>
 </ul>
-<p>附：更多模板见 <code>templates/note_template.md</code>。</p>
-<p>感谢贡献！ — CHENyiru &amp; contributors</p>
+<p>感谢贡献！</p>
 
 
 
