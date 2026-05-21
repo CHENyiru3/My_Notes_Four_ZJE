@@ -8,7 +8,7 @@ Run `python3 scripts/generate_folder_bundle_status.py` after changing the manife
 
 | State | Count |
 |---|---:|
-| present | 9 |
+| present | 10 |
 | unavailable | 5 |
 | ready to materialize | 0 |
 | source files required | 0 |
@@ -18,6 +18,7 @@ Run `python3 scripts/generate_folder_bundle_status.py` after changing the manife
 
 | ID | Course | Contributor | Payload State | Available Listed Files | Missing Listed Files |
 |---|---|---|---|---:|---:|
+| `ads2-exam-skill-bundle-yiru` | ADS2 | Yiru | present | 15 | 0 |
 | `zip-bg-maps-xiaoran-etal` | BG2 | Xiaoran_etal | unavailable | 24 | 0 |
 | `zip-bg2-sum-yiru` | BG2 | Yiru | present | 4 | 0 |
 | `zip-code-cheatsheet-yiru` | Code_Cheatsheet | Yiru | present | 6 | 0 |

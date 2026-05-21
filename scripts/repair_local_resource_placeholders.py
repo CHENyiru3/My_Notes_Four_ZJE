@@ -12,53 +12,16 @@ from pathlib import Path
 from materialize_folder_bundles_to_onedrive import ONEDRIVE_ROOT
 from resource_manifest import ROOT, file_payload_issue
 
-PLACEHOLDER_COPY_REPAIRS = [
-    (
-        "COURSES/Year2/GP2/Yiru/GP2_sum_Yiru/GP提纲.pdf",
-        "COURSES/Year2/GP2/Yiru/GP提纲.pdf",
-    ),
-    (
-        "COURSES/Year2/IFBS2/Yue/IFBS（theme34)/IFBS theme3_消化吸收过程.pdf",
-        "COURSES/Year2/IFBS2/Yue/IFBS theme3_消化吸收过程.pdf",
-    ),
-    (
-        "COURSES/Year2/IFBS2/Yue/IFBS（theme34)/IFBS theme3_消化器官1.pdf",
-        "COURSES/Year2/IFBS2/Yue/IFBS theme3_消化器官1.pdf",
-    ),
-    (
-        "COURSES/Year3/PoN3/Yue/pon/pon笔记.pdf",
-        "COURSES/Year3/PoN3/Yue/pon笔记.pdf",
-    ),
-    (
-        "COURSES/Year3/PoN3/Yue/pon/theme NDD.pdf",
-        "COURSES/Year3/PoN3/Yue/theme NDD.pdf",
-    ),
-    (
-        "COURSES/Year4/IID_4/Yiru/IID_4_full_Yiru/NotebookLLM_Topic_1.pdf",
-        "COURSES/Year4/IID_4/Yiru/NotebookLLM_Topic_1.pdf",
-    ),
-    (
-        "COURSES/Year4/IID_4/Yiru/IID_4_full_Yiru/NotebookLLM_Topic_4.pdf",
-        "COURSES/Year4/IID_4/Yiru/NotebookLLM_Topic_4.pdf",
-    ),
-    (
-        "COURSES/Year4/IID_4/Yiru/IID_4_full_Yiru/NotebookLLM_Topic_5_EVA.pdf",
-        "COURSES/Year4/IID_4/Yiru/NotebookLLM_Topic_5_EVA.pdf",
-    ),
-    (
-        "COURSES/Year4/IID_4/Yiru/IID_4_full_Yiru/NotebookLLm_Topic_3.pdf",
-        "COURSES/Year4/IID_4/Yiru/NotebookLLm_Topic_3.pdf",
-    ),
-]
+PLACEHOLDER_COPY_REPAIRS: list[tuple[str, str]] = []
 
 HEAD_REPAIRS = [
     (
         "ZJE_Collection/IFBS2/Yue/IFBStheme34_tutorialquestion.pdf",
-        "COURSES/Year2/IFBS2/Yue/IFBStheme34_tutorialquestion.pdf",
+        "COURSES/Year2/IFBS2/Yue/IFBS2_Yue_theme3_4_tutorial_questions.pdf",
     ),
     (
         "ZJE_Collection/MI2/Yue/MI（非完整）.pdf",
-        "COURSES/Year2/MI2/Yue/MI（非完整）.pdf",
+        "COURSES/Year2/MI2/Yue/MI2_Yue_incomplete_notes.pdf",
     ),
     (
         "ZJE_Collection/zip_contents/Yue/BaO（非完整）.pdf",

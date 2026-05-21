@@ -13,7 +13,7 @@ Run `python3 scripts/generate_migration_status.py` after changing the manifest, 
 | MkDocs excludes repo manifest from public site | yes |
 | OneDrive manifest copy exists | yes |
 | OneDrive manifest copy matches repo manifest | yes |
-| Non-retired OneDrive payloads present | 39 |
+| Non-retired OneDrive payloads present | 40 |
 | Non-retired OneDrive payloads missing | 0 |
 | Non-retired OneDrive payloads unavailable | 25 |
 | ZIP files under `ZJE_resource` | 0 |
@@ -23,7 +23,7 @@ Run `python3 scripts/generate_migration_status.py` after changing the manifest, 
 | Type | Count |
 |---|---:|
 | course_package | 19 |
-| folder_bundle | 14 |
+| folder_bundle | 15 |
 | individual_file | 31 |
 | retired_mirror | 3 |
 
@@ -31,7 +31,7 @@ Run `python3 scripts/generate_migration_status.py` after changing the manifest, 
 
 | Tier | Count |
 |---|---:|
-| core | 42 |
+| core | 43 |
 | large_archive | 22 |
 | retired | 3 |
 
@@ -39,8 +39,8 @@ Run `python3 scripts/generate_migration_status.py` after changing the manifest, 
 
 | Status | Count |
 |---|---:|
-| released | 0 |
-| pending | 64 |
+| released | 40 |
+| pending | 25 |
 | private | 0 |
 | unavailable | 0 |
 | broken | 0 |
@@ -50,7 +50,7 @@ Run `python3 scripts/generate_migration_status.py` after changing the manifest, 
 
 | State | Count |
 |---|---:|
-| present | 9 |
+| present | 10 |
 | unavailable | 5 |
 | ready to materialize | 0 |
 | source files required | 0 |

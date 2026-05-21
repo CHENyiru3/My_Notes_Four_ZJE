@@ -6,7 +6,7 @@ For current migration gates, see `migration_status.md`. For local OneDrive folde
 
 | ID | Course | Contributor | Tier | Status | Access Channel | Visibility | Source Pages |
 |---|---|---|---|---|---|---|---|
-| `ads2-exam-skill-bundle-yiru` | ADS2 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ADS2/index.md<br>ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/ADS2_exam_skill_bundle.md |
+| `ads2-exam-skill-bundle-yiru` | ADS2 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ADS2/index.md<br>ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/ADS2_Yiru_exam_skill_bundle.md |
 | `ads2-hal-2022-2023` | ADS2 | Hal | Large Archive | pending | OneDrive browser | pending_review | ZJE_Collection/ADS2/index.md<br>ZJE_Collection/ADS2/Hal/ADS2_2022_2023_link.txt |
 | `bao2-yue-bao-b4a4d26a` | BaO2 | Yue | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/BaO2/Yue/BaO（非完整）.pdf |
 | `bg2-hal-2022-2023` | BG2 | Hal | Large Archive | pending | OneDrive browser | pending_review | ZJE_Collection/BG2/index.md<br>ZJE_Collection/BG2/Hal/BG2_2022_2023_link.txt |
@@ -58,19 +58,19 @@ For current migration gates, see `migration_status.md`. For local OneDrive folde
 | `pon3-yue-pon-gedi-dd612b53` | PoN3 | Yue | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/PoN3/Yue/pon gedi.pdf |
 | `pon3-yue-theme-ndd-375a6d7b` | PoN3 | Yue | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/PoN3/Yue/theme NDD.pdf |
 | `zip-bg-maps-xiaoran-etal` | BG2 | Xiaoran_etal | Large Archive | pending | OneDrive browser | pending_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/BG导图合集_lxrwyqlxf.md |
-| `zip-bg2-sum-yiru` | BG2 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/BG2_sum_Yiru.md |
-| `zip-code-cheatsheet-yiru` | Code_Cheatsheet | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/Code_Cheatsheet_Yiru.md |
+| `zip-bg2-sum-yiru` | BG2 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/BG2_Yiru_summary.md |
+| `zip-code-cheatsheet-yiru` | Code_Cheatsheet | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/Code_Cheatsheet_Yiru_collection.md |
 | `zip-contents-yue-bao-b4a4d26a` | zip_contents | Yue | Retired | retired | OneDrive browser | retired | ZJE_Collection/zip_contents/Yue/BaO（非完整）.pdf |
 | `zip-contents-yue-ifbstheme34-tutorialquestion-46239494` | zip_contents | Yue | Retired | retired | OneDrive browser | retired | ZJE_Collection/zip_contents/Yue/IFBStheme34_tutorialquestion.pdf |
 | `zip-contents-yue-mi-4b09c058` | zip_contents | Yue | Retired | retired | OneDrive browser | retired | ZJE_Collection/zip_contents/Yue/MI（非完整）.pdf |
-| `zip-gp2-sum-yiru` | GP2 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/GP2_sum_Yiru.md |
-| `zip-ibms3-full-yiru` | IBMS3 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/IBMS3_full_Yiru.md |
+| `zip-gp2-sum-yiru` | GP2 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/GP2_Yiru_summary.md |
+| `zip-ibms3-full-yiru` | IBMS3 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/IBMS3_Yiru_full_notes.md |
 | `zip-ifbs-mindmap-xiaoran-etal` | IFBS2 | Xiaoran_etal | Large Archive | pending | OneDrive browser | pending_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/思维导图IFBS_lxr.md |
-| `zip-ifbs-theme34-yue` | IFBS2 | Yue | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/IFBS（theme34).md |
-| `zip-iid4-full-yiru` | IID_4 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/IID_4_full_Yiru.md |
+| `zip-ifbs-theme34-yue` | IFBS2 | Yue | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/IFBS2_Yue_theme3_theme4.md |
+| `zip-iid4-full-yiru` | IID_4 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/IID4_Yiru_full_notes.md |
 | `zip-in-lxfwyqlxr` | IN3_full | Xiaoran_etal | Large Archive | pending | OneDrive browser | pending_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/IN_lxfwyqlxr.md |
 | `zip-mbe-lxrwyalxf` | MBE3 | Xiaoran_etal | Core | pending | OneDrive browser | pending_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/MBE_lxrwyalxf.md |
-| `zip-mbe3-sum-yiru` | MBE3 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/MBE3_sum_Yiru.md |
+| `zip-mbe3-sum-yiru` | MBE3 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/MBE3_Yiru_summary.md |
 | `zip-pon-review-lxrwyqlxf` | PoN3 | Xiaoran_etal | Core | pending | OneDrive browser | pending_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/pon复习资料_lxrwyqlxf.md |
-| `zip-pon-yue` | PoN3 | Yue | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/pon.md |
-| `zip-pon3-full-yiru` | PoN3 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/PoN3_full_Yiru.md |
+| `zip-pon-yue` | PoN3 | Yue | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/PoN3_Yue_notes.md |
+| `zip-pon3-full-yiru` | PoN3 | Yiru | Core | released | GitHub direct + OneDrive browser | public_after_review | ZJE_Collection/ZIPS_INDEX.md<br>ZJE_Collection/zip_contents/PoN3_Yiru_full_notes.md |

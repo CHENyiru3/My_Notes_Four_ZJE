@@ -4,10 +4,7 @@
 
 - Yiru: [notes](Yiru/index.md)
 
-## Files
+## Materials
 
 - Browse Yiru notes: [Yiru/](Yiru/index.md)
-
-## External links
-
-See [IID_4 resources](../resources/index.md#course-iid-4) for GitHub mirrors and OneDrive folder access.
+- Download files/folders: [IID_4 resources](../resources/index.md#course-iid-4) for GitHub mirrors and OneDrive folder access.

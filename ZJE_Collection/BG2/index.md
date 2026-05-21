@@ -4,10 +4,7 @@
 
 - Yiru: [notes and resource status](Yiru/index.md)
 
-## Files
+## Materials
 
 - Browse Yiru materials: [Yiru/](Yiru/index.md)
-
-## External links
-
-See [BG2 resources](../resources/index.md#course-bg2) for GitHub mirrors and OneDrive folder access.
+- Download files/folders: [BG2 resources](../resources/index.md#course-bg2) for GitHub mirrors and OneDrive folder access.

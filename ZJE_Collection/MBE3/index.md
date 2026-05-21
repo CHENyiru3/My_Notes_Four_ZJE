@@ -5,11 +5,7 @@
 - Yiru: [notes](Yiru/index.md)
 - Xiaoran_etal: [additional materials](../resources/index.md#course-mbe3)
 
-## Files
+## Materials
 
 - Browse Yiru notes: [Yiru/](Yiru/index.md)
-- Browse Xiaoran_etal materials: [Resource package index](../resources/index.md#course-mbe3)
-
-## External links
-
-See [MBE3 resources](../resources/index.md#course-mbe3) for GitHub mirrors and OneDrive folder access.
+- Download files/folders: [MBE3 resources](../resources/index.md#course-mbe3) for GitHub mirrors and OneDrive folder access.

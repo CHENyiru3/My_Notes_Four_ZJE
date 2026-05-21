@@ -142,7 +142,7 @@ def write_report(plans: list[SplitPlan], executed: bool) -> None:
         "action",
     ]
     with REPORT_CSV.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=fieldnames)
+        writer = csv.DictWriter(fh, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for plan in plans:
             writer.writerow(

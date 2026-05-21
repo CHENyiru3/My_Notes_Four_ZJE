@@ -214,9 +214,9 @@ Examples:
 
 ```text
 COURSES/Year2/ADS2/Hal/ads2_hal_2022_2023/
-COURSES/Year2/BG2/Yiru/Collection of disease.pdf
-COURSES/Year3/IBMS3/Yiru/Experimental Design & Ethics.pdf
-COURSES/Resources/Code_Cheatsheet/Yiru/base-r-cheat-sheet.pdf
+COURSES/Year2/BG2/Yiru/BG2_Yiru_summary/BG2_Yiru_disease_collection.pdf
+COURSES/Year3/IBMS3/Yiru/IBMS3_Yiru_full_notes/IBMS3_Yiru_experimental_design_and_ethics.pdf
+COURSES/Shared/Code_Cheatsheet/Yiru/Code_Cheatsheet_Yiru_collection/Code_Cheatsheet_Yiru_Base_R_cheat_sheet.pdf
 ```
 
 ### 5.2 Folder Bundle Convention

@@ -186,7 +186,7 @@ def write_csv(path: Path, resources: list[dict[str, Any]]) -> None:
         "public_url",
     ]
     with path.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=fieldnames)
+        writer = csv.DictWriter(fh, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for resource in resources:
             writer.writerow({key: resource.get(key, "") for key in fieldnames})

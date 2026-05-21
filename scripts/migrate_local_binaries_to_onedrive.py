@@ -36,7 +36,7 @@ SKELETON_DIRS = [
     "COURSES/Year4/BIA4",
     "COURSES/Year4/IBMS4",
     "COURSES/Year4/IID_4",
-    "COURSES/Resources/Code_Cheatsheet",
+    "COURSES/Shared/Code_Cheatsheet",
     "INCOMING/unsorted",
     "INCOMING/checked",
     "INCOMING/rejected",

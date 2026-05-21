@@ -4,6 +4,7 @@
 
 - Yue: [PDF materials](Yue/index.md)
 
-## Files
+## Materials
 
-- Browse Yue PDFs: [Yue/](Yue/index.md)
+- Browse Yue materials: [Yue/](Yue/index.md)
+- Download files/folders: [BaO2 resources](../resources/index.md#course-bao2) for GitHub mirrors and OneDrive folder access.

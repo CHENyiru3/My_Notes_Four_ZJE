@@ -15,7 +15,6 @@ BINARY_SUFFIXES = {".pdf", ".docx", ".pptx", ".xlsx", ".zip"}
 PUBLIC_DOC_FORBIDDEN_TEXT = [
     "/Users/eric_yiru/",
     "OneDrive-InternationalCampus",
-    "ZJE_resource",
     "ZJE_Collection/resources/resource_manifest.yml",
     "original_source_url",
     "local_onedrive_path",
