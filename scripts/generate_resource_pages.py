@@ -56,6 +56,19 @@ YEAR_LABELS = {
     "all": "Other Resources",
 }
 
+LEGACY_DETAIL_PAGE_ALIASES = {
+    "ADS2_exam_skill_bundle.md": ("ADS2 Yiru Exam Skill Bundle", "ADS2_Yiru_exam_skill_bundle.md"),
+    "BG2_sum_Yiru.md": ("BG2 Yiru Summary", "BG2_Yiru_summary.md"),
+    "Code_Cheatsheet_Yiru.md": ("Code Cheatsheet Yiru Collection", "Code_Cheatsheet_Yiru_collection.md"),
+    "GP2_sum_Yiru.md": ("GP2 Yiru Summary", "GP2_Yiru_summary.md"),
+    "IBMS3_full_Yiru.md": ("IBMS3 Yiru Full Notes", "IBMS3_Yiru_full_notes.md"),
+    "IFBS（theme34).md": ("IFBS2 Yue Theme 3-4 Notes", "IFBS2_Yue_theme3_theme4.md"),
+    "IID_4_full_Yiru.md": ("IID4 Yiru Full Notes", "IID4_Yiru_full_notes.md"),
+    "MBE3_sum_Yiru.md": ("MBE3 Yiru Summary", "MBE3_Yiru_summary.md"),
+    "PoN3_full_Yiru.md": ("PoN3 Yiru Full Notes", "PoN3_Yiru_full_notes.md"),
+    "pon.md": ("PoN3 Yue Notes", "PoN3_Yue_notes.md"),
+}
+
 
 def anchor(course: str) -> str:
     return "course-" + course.lower().replace("_", "-")
@@ -470,6 +483,25 @@ def write_folder_detail_headers(resources: list[dict[str, Any]]) -> None:
         path.write_text("\n".join(output) + "\n", encoding="utf-8")
 
 
+def write_legacy_detail_aliases() -> None:
+    alias_dir = DOCS_DIR / "zip_contents"
+    alias_dir.mkdir(parents=True, exist_ok=True)
+    for legacy_name, (title, target_name) in LEGACY_DETAIL_PAGE_ALIASES.items():
+        target_route = "../" + target_name.removesuffix(".md") + "/"
+        lines = [
+            f'<meta http-equiv="refresh" content="0; url={target_route}">',
+            "",
+            f"# Moved: {title}",
+            "",
+            f"This folder contents page moved to [{title}]({markdown_path(target_name)}).",
+            "",
+            "<script>",
+            f'window.location.replace("{target_route}" + window.location.search + window.location.hash);',
+            "</script>",
+        ]
+        (alias_dir / legacy_name).write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     RESOURCE_DIR.mkdir(parents=True, exist_ok=True)
     resources = read_manifest()
@@ -479,6 +511,7 @@ def main() -> None:
     write_packages_index(resources)
     write_folder_contents_overview(resources)
     write_folder_detail_headers(resources)
+    write_legacy_detail_aliases()
     print(f"Generated resource pages for {len(resources)} resources")
 
 
