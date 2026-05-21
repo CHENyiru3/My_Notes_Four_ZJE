@@ -1,6 +1,6 @@
-# Contents of IN_lxfwyqlxr.zip
+# Contents of IN_lxfwyqlxr
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../ZIPS_INDEX.md)).
+Access: [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i)
 
 - in/1.1 1.2 Epidemiology.xmind
 - in/2.1 Candida spp..xmind

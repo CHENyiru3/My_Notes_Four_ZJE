@@ -6,8 +6,8 @@
 
 ## Files
 
-- Browse Yiru notes: [Yiru/](Yiru/)
+- Browse Yiru notes: [Yiru/](Yiru/index.md)
 
 ## External links
 
-- Hal (2024-2025): https://drive.google.com/file/d/1croWrQe1agk-zbvIklNjL-roso30TlZ_/view?usp=sharing
+Download links are being migrated to OneDrive. See [IID_4 resources](../resources/index.md#course-iid-4).

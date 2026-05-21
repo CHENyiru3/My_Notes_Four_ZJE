@@ -1,6 +1,6 @@
-# Contents of MBE_lxrwyalxf.zip
+# Contents of MBE_lxrwyalxf
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../../ZIPS_INDEX.md)).
+Access: OneDrive folder link pending release.
 
 - MBE/Key points - tp lxr.docx
 - MBE/Key points-简化版关键信息.docx

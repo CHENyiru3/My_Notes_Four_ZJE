@@ -2,8 +2,8 @@
 
 ## Contributors
 
-- Yue: [PDF materials](Yue/)
+- Yue: [PDF materials](Yue/index.md)
 
 ## Files
 
-- Browse Yue PDFs: [Yue/](Yue/)
+- Browse Yue PDFs: [Yue/](Yue/index.md)

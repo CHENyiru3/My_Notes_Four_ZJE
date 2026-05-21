@@ -18,4 +18,4 @@ Files and subfolders:
 - [6.2 Schemas and decision making.md](6.2 Schemas and decision making.md)
 - [7.1 Neuroimaging.md](7.1 Neuroimaging.md)
 - [7.2 Mood, habits, and addiction.md](7.2 Mood, habits, and addiction.md)
-- [final_exam/](final_exam/)
+- [final_exam/](final_exam/index.md)

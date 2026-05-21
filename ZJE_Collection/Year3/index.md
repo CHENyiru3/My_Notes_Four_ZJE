@@ -6,9 +6,9 @@
 
 | | |
 |---|---|
-| [BMI3](../BMI3/) | Biomedical Informatics |
-| [CBSB3](../CBSB3/) | Computational Biology |
-| [IBMS3](../IBMS3/) | Biomedical Sciences |
-| [IN3](../IN3_full/) | Immunology |
-| [MBE3](../MBE3/) | Molecular Biology |
-| [PoN3](../PoN3/) | Principles of Neuroscience |
+| [BMI3](../BMI3/index.md) | Biomedical Informatics |
+| [CBSB3](../CBSB3/index.md) | Computational Biology |
+| [IBMS3](../IBMS3/index.md) | Biomedical Sciences |
+| [IN3](../IN3_full/index.md) | Immunology |
+| [MBE3](../MBE3/index.md) | Molecular Biology |
+| [PoN3](../PoN3/index.md) | Principles of Neuroscience |

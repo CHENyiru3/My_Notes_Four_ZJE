@@ -1,6 +1,6 @@
-# Contents of BG导图合集_lxrwyqlxf.zip
+# Contents of BG导图合集_lxrwyqlxf
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../../ZIPS_INDEX.md)).
+Access: OneDrive folder link pending release.
 
 - ╡╝═╝/1 Genetic variation.pdf
 - ╡╝═╝/1 Genetic variation.xmind

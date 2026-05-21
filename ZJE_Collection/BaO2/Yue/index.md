@@ -2,6 +2,4 @@
 
 Materials contributed by Yue:
 
-- BaO（非完整）.pdf — [Download/view](BaO（非完整）.pdf)
-
-If you prefer a URL-safe filename, I can rename the PDF to `BaO_partial.pdf` and update links.
+Downloadable files have moved to OneDrive. See [BaO2 resources](../../resources/index.md#course-bao2).

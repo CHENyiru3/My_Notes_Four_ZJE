@@ -13,5 +13,5 @@ Files and subfolders in `detailed`:
 
 Subfolders:
 
-- [experiments_case/](experiments_case/)
-- [from_yicheng/](from_yicheng/)
+- [experiments_case/](experiments_case/index.md)
+- [from_yicheng/](from_yicheng/index.md)

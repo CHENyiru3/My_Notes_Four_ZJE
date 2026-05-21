@@ -1,28 +1,40 @@
-# ZIP contributions index
+# Resource Package Index
 
-This file lists zip archives included in the collection, the inferred contributor, and a contents page.
+Course packages and folder bundles are listed here even when their payload is OneDrive-only. GitHub-safe PDF/Markdown bundles link to GitHub; larger or mixed-format packages link to the relevant OneDrive browser folder.
 
-All large ZIP archives are hosted externally (not stored in this Git repo).
-
-Google Drive folder (all uploads): https://drive.google.com/drive/folders/1_ttbZASdiHPW9xt0GSjVjFHF5MAPk2fv?usp=drive_link
-
-For per-zip contents pages, see [zip_contents overview](zip_contents/index.md).
-
-## Quick index
-
-| Package (Drive file name) | Contributor | Detail page |
-|---|---|---|
-| BG导图合集_lxrwyqlxf.zip | Xiaoran_etal | [BG导图合集_lxrwyqlxf](zip_contents/BG导图合集_lxrwyqlxf.md) |
-| 思维导图IFBS_lxr.zip | Xiaoran_etal | [思维导图IFBS_lxr](zip_contents/思维导图IFBS_lxr.md) |
-| IN_lxfwyqlxr.zip | Xiaoran_etal | [IN_lxfwyqlxr](zip_contents/IN_lxfwyqlxr.md) |
-| MBE_lxrwyalxf.zip | Xiaoran_etal | [MBE_lxrwyalxf](zip_contents/MBE_lxrwyalxf.md) |
-| pon复习资料_lxrwyqlxf.zip | Xiaoran_etal | [pon复习资料_lxrwyqlxf](zip_contents/pon复习资料_lxrwyqlxf.md) |
-| IFBS（theme34).zip | Yue | [IFBS（theme34)](zip_contents/IFBS（theme34%29.md) |
-| pon.zip | Yue | [pon](zip_contents/pon.md) |
-| BG2_sum_Yiru.zip | Yiru | [BG2_sum_Yiru](zip_contents/BG2_sum_Yiru.md) |
-| Code_Cheatsheet_Yiru.zip | Yiru | [Code_Cheatsheet_Yiru](zip_contents/Code_Cheatsheet_Yiru.md) |
-| GP2_sum_Yiru.zip | Yiru | [GP2_sum_Yiru](zip_contents/GP2_sum_Yiru.md) |
-| IBMS3_full_Yiru.zip | Yiru | [IBMS3_full_Yiru](zip_contents/IBMS3_full_Yiru.md) |
-| IID_4_full_Yiru.zip | Yiru | [IID_4_full_Yiru](zip_contents/IID_4_full_Yiru.md) |
-| MBE3_sum_Yiru.zip | Yiru | [MBE3_sum_Yiru](zip_contents/MBE3_sum_Yiru.md) |
-| PoN3_full_Yiru.zip | Yiru | [PoN3_full_Yiru](zip_contents/PoN3_full_Yiru.md) |
+| Resource | Course | Contributor | Type | Tier | Access | Channel |
+|---|---|---|---|---|---|---|
+| CHEM1 Hal Materials | CHEM1 | Hal | Course Package | Large Archive | [Browse Year 1 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgC2JwUazghaTrQCEYoQ-44kARnLAL1v94ybyAMVFl25ZHg?e=aSnCYW) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IBI1 Hal Materials | IBI1 | Hal | Course Package | Large Archive | [Browse Year 1 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgC2JwUazghaTrQCEYoQ-44kARnLAL1v94ybyAMVFl25ZHg?e=aSnCYW) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IBMS1 Hal Materials | IBMS1 | Hal | Course Package | Large Archive | [Browse Year 1 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgC2JwUazghaTrQCEYoQ-44kARnLAL1v94ybyAMVFl25ZHg?e=aSnCYW) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| ICMB1 Hal Materials | ICMB1 | Hal | Course Package | Large Archive | [Browse Year 1 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgC2JwUazghaTrQCEYoQ-44kARnLAL1v94ybyAMVFl25ZHg?e=aSnCYW) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| MATH1 Calculus Materials | MATH1 | Hal | Course Package | Large Archive | [Browse Year 1 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgC2JwUazghaTrQCEYoQ-44kARnLAL1v94ybyAMVFl25ZHg?e=aSnCYW) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| MATH1 Statistics Materials | MATH1 | Hal | Course Package | Large Archive | [Browse Year 1 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgC2JwUazghaTrQCEYoQ-44kARnLAL1v94ybyAMVFl25ZHg?e=aSnCYW) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| ADS2 Hal Materials | ADS2 | Hal | Course Package | Large Archive | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| ADS2 Exam Skill Bundle | ADS2 | Yiru | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/ADS2/Yiru/ads2-exam-skill-bundle) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| BG2 Hal Materials | BG2 | Hal | Course Package | Large Archive | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| BG2_sum_Yiru | BG2 | Yiru | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/BG2/Yiru/BG2_sum_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| BG导图合集_lxrwyqlxf | BG2 | Xiaoran_etal | Folder Bundle | Large Archive | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| DST2 Hal Materials | DST2 | Hal | Course Package | Large Archive | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| GP2 Hal Materials | GP2 | Hal | Course Package | Large Archive | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| GP2_sum_Yiru | GP2 | Yiru | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/GP2/Yiru/GP2_sum_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| IFBS2 Hal Materials | IFBS2 | Hal | Course Package | Large Archive | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IFBS（theme34) | IFBS2 | Yue | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/IFBS2/Yue/IFBS%EF%BC%88theme34%29) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| 思维导图IFBS_lxr | IFBS2 | Xiaoran_etal | Folder Bundle | Large Archive | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| BMI3 Hal Materials | BMI3 | Hal | Course Package | Large Archive | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| CBSB3 Hal Materials | CBSB3 | Hal | Course Package | Large Archive | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IBMS3 Hal Materials | IBMS3 | Hal | Course Package | Large Archive | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IBMS3_full_Yiru | IBMS3 | Yiru | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/IBMS3/Yiru/IBMS3_full_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| IN_lxfwyqlxr | IN3_full | Xiaoran_etal | Folder Bundle | Large Archive | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| MBE3 Hal Materials | MBE3 | Hal | Course Package | Large Archive | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| MBE3_sum_Yiru | MBE3 | Yiru | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/MBE3/Yiru/MBE3_sum_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| MBE_lxrwyalxf | MBE3 | Xiaoran_etal | Folder Bundle | Core | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| PoN3 Hal Materials | PoN3 | Hal | Course Package | Large Archive | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| PoN3_full_Yiru | PoN3 | Yiru | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/PoN3/Yiru/PoN3_full_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| pon | PoN3 | Yue | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/PoN3/Yue/pon) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| pon复习资料_lxrwyqlxf | PoN3 | Xiaoran_etal | Folder Bundle | Core | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| BIA4 Hal Materials | BIA4 | Hal | Course Package | Large Archive | [Browse Year 4 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgCSCCfBxURMSq5JFol9LPT0AUOWaYbFo67D2u_X_O8z508?e=vYnq5P) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IBMS4 Hal Materials | IBMS4 | Hal | Course Package | Large Archive | [Browse Year 4 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgCSCCfBxURMSq5JFol9LPT0AUOWaYbFo67D2u_X_O8z508?e=vYnq5P) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IID_4 Hal Materials | IID_4 | Hal | Course Package | Large Archive | [Browse Year 4 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgCSCCfBxURMSq5JFol9LPT0AUOWaYbFo67D2u_X_O8z508?e=vYnq5P) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IID_4_full_Yiru | IID_4 | Yiru | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year4/IID_4/Yiru/IID_4_full_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| Code_Cheatsheet_Yiru | Code_Cheatsheet | Yiru | Folder Bundle | Core | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Resources/Code_Cheatsheet/Yiru/Code_Cheatsheet_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |

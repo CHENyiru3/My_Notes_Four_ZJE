@@ -1,6 +1,6 @@
-# Contents of Code_Cheatsheet_Yiru.zip
+# Contents of Code_Cheatsheet_Yiru
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../ZIPS_INDEX.md)).
+Access: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Resources/Code_Cheatsheet/Yiru/Code_Cheatsheet_Yiru)
 
 - Code_Cheatsheet/JAVA_Sum_yiru.pdf
 - Code_Cheatsheet/R数据科学 ( etc.) (Z-Library).pdf

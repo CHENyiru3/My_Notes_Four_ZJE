@@ -3,4 +3,4 @@
 
 ## External links
 
-- Hal (2023-2024): https://drive.google.com/file/d/1aiyIviT2sEW57mjtEKqtddtFxK4n8C4I/view?usp=sharing
+Download links are being migrated to OneDrive. See [CBSB3 resources](../resources/index.md#course-cbsb3).

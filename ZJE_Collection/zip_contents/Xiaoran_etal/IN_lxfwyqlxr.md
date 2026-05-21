@@ -1,6 +1,6 @@
-# Contents of IN_lxfwyqlxr.zip
+# Contents of IN_lxfwyqlxr
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../../ZIPS_INDEX.md)).
+Access: OneDrive folder link pending release.
 
 - in/1.1 1.2 Epidemiology.xmind
 - in/2.1 Candida spp..xmind

@@ -1,5 +1,5 @@
 # IN
 
-Files contributed:
+Resources contributed:
 
-- ZIP packages are hosted externally. See: [IN_lxfwyqlxr](../zip_contents/IN_lxfwyqlxr.md)
+- Folder bundle contents: [IN_lxfwyqlxr](../zip_contents/IN_lxfwyqlxr.md)

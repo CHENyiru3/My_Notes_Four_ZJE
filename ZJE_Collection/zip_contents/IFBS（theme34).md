@@ -1,6 +1,6 @@
-# Contents of IFBS（theme34).zip
+# Contents of IFBS（theme34)
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../ZIPS_INDEX.md)).
+Access: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/IFBS2/Yue/IFBS%EF%BC%88theme34%29)
 
 - IFBS/IFBS theme3_消化吸收过程.pdf
 - IFBS/IFBS theme3_消化器官1.pdf

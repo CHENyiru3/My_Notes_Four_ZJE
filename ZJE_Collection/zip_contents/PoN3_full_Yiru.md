@@ -1,6 +1,6 @@
-# Contents of PoN3_full_Yiru.zip
+# Contents of PoN3_full_Yiru
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../ZIPS_INDEX.md)).
+Access: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/PoN3/Yiru/PoN3_full_Yiru)
 
 - PoN3_full/1.1 Introduction and Refresh.md
 - PoN3_full/1.2 Presynaptic release.md

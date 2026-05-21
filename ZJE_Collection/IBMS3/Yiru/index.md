@@ -2,12 +2,8 @@
 
 Files and subfolders:
 
-- [一实验方法速查.pdf](一实验方法速查.pdf)
-- [考前整理(1).pdf](考前整理%281%29.pdf)
-- [Experimental Design & Ethics.pdf](Experimental Design & Ethics.pdf)
-- [IBMS Dry Lab 答题总结.pdf](IBMS Dry Lab 答题总结.pdf)
-- [IBMS Wet Lab 答题总结.pdf](IBMS Wet Lab 答题总结.pdf)
+Downloadable files have moved to OneDrive. See [IBMS3 resources](../../resources/index.md#course-ibms3).
 
 Subfolders:
 
-- [detailed/](detailed/)
+- [detailed/](detailed/index.md)

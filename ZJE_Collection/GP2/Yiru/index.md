@@ -2,4 +2,4 @@
 
 Files:
 
-- [GP提纲.pdf](GP提纲.pdf)
+Downloadable files have moved to OneDrive. See [GP2 resources](../../resources/index.md#course-gp2).

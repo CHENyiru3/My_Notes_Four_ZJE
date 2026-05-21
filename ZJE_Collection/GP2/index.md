@@ -2,12 +2,12 @@
 
 ## Contributors
 
-- Yiru: [notes and PDFs](Yiru/index.md)
+- Yiru: [notes and resource status](Yiru/index.md)
 
 ## Files
 
-- Browse Yiru materials: [Yiru/](Yiru/)
+- Browse Yiru materials: [Yiru/](Yiru/index.md)
 
 ## External links
 
-- Hal (2022-2023): https://drive.google.com/file/d/1P4oNZSKyOg9kB8Ie05srfcW8GpwyFp08/view?usp=sharing
+Download links are being migrated to OneDrive. See [GP2 resources](../resources/index.md#course-gp2).

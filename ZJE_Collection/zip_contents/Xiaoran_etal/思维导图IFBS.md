@@ -1,6 +1,6 @@
-# Contents of 思维导图IFBS.zip
+# Contents of 思维导图IFBS
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../../ZIPS_INDEX.md)).
+Access: OneDrive folder link pending release.
 
 - 思维导图IFBS/theme1/1.12-1.16 Urinary System.xmind
 - 思维导图IFBS/theme1/1.2-1.3 The heart.xmind

@@ -2,6 +2,4 @@
 
 Files:
 
-- [calculation.pdf](calculation.pdf)
-- [Collection of disease.pdf](Collection of disease.pdf)
-- [Collection of technology.pdf](Collection of technology.pdf)
+Downloadable files have moved to OneDrive. See [BG2 resources](../../resources/index.md#course-bg2).

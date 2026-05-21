@@ -1,15 +1,13 @@
-name: Update ZIP listings
+name: Validate resource metadata
 
 on:
-  schedule:
-    - cron: '0 0 * * *'    # daily at UTC midnight
   workflow_dispatch: {}
   push:
     branches: [ main ]
   pull_request: {}
 
 jobs:
-  generate:
+  validate:
     if: >-
       github.event_name != 'push' || (github.event.head_commit != null && !contains(github.event.head_commit.message, '[skip ci]'))
     runs-on: ubuntu-latest
@@ -24,18 +22,17 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run zip listing generator
+      - name: Generate resource pages
         run: |
-          python3 scripts/generate_zip_listings.py
+          python3 scripts/generate_resource_pages.py
 
-      - name: Commit generated files if changed
+      - name: Validate manifest and links
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain)" ]; then
-            git add ZJE_Collection/ZIPS_INDEX.md ZJE_Collection/zip_contents || true
-            git commit -m "[skip ci] Update ZIP listings" || echo "no changes to commit"
-            git push
-          else
-            echo "No changes to commit"
-          fi
+          python3 scripts/check_resource_manifest.py
+          python3 scripts/check_resource_pages.py
+          python3 scripts/check_public_link_release_queue.py
+          python3 scripts/check_links.py
+
+      - name: Ensure generated pages are committed
+        run: |
+          git diff --exit-code -- ZJE_Collection/ZIPS_INDEX.md ZJE_Collection/resources ZJE_Collection/zip_contents/index.md resource_migration_reports/resource_status.md

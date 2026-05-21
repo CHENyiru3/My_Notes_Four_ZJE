@@ -2,4 +2,4 @@
 
 ## External links
 
-- Hal (2023-2024): https://drive.google.com/file/d/1QB0Z1TYR2U0DTcqwliKIKlJaJ68Umau2/view?usp=sharing
+Download links are being migrated to OneDrive. See [BMI3 resources](../resources/index.md#course-bmi3).

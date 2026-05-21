@@ -1,0 +1,154 @@
+.resource-hero {
+  border: 1px solid #d8dee9;
+  border-left: 5px solid #2f6f9f;
+  border-radius: 8px;
+  background: #f7fafc;
+  padding: 1.25rem 1.35rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.resource-hero h2 {
+  margin: 0.15rem 0 0.45rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.resource-hero p {
+  margin: 0;
+}
+
+.resource-kicker {
+  color: #626a73;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.resource-kpi-grid,
+.resource-folder-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.resource-kpi-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.resource-folder-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.resource-kpi,
+.resource-folder-card {
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.resource-kpi {
+  padding: 0.9rem;
+}
+
+.resource-kpi strong {
+  display: block;
+  color: #245f73;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.resource-kpi span,
+.resource-folder-count {
+  color: #626a73;
+  font-size: 0.82rem;
+}
+
+.resource-folder-card {
+  display: flex;
+  min-height: 13rem;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1rem;
+}
+
+.resource-folder-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.resource-folder-card p {
+  flex: 1;
+  margin: 0;
+  color: #3f4852;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.resource-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.15rem;
+  border-radius: 6px;
+  padding: 0.45rem 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.resource-button--onedrive {
+  background: #245f73;
+  color: #ffffff !important;
+}
+
+.resource-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.12rem 0.48rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.resource-badge--github {
+  background: #e9f5ee;
+  color: #1f6b44;
+}
+
+.resource-badge--onedrive {
+  background: #fff4dc;
+  color: #7a4b00;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+}
+
+.md-typeset table:not([class]) th {
+  white-space: nowrap;
+}
+
+@media (max-width: 76rem) {
+  .resource-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .resource-folder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 44rem) {
+  .resource-hero {
+    padding: 1rem;
+  }
+
+  .resource-kpi-grid,
+  .resource-folder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-folder-card {
+    min-height: auto;
+  }
+}

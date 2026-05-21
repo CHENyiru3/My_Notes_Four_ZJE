@@ -1,42 +1,21 @@
-# ZIP Contents Overview
+# Folder Bundle Contents Overview
 
-This folder contains per-zip detail pages.
+This folder contains lightweight contents pages for folder bundles. GitHub-safe bundles open directly in GitHub; larger or mixed-format bundles are browsed through the shared OneDrive folders.
 
-Note: ZIP files are hosted externally (not stored in this Git repo).
-
-Google Drive folder (all uploads): https://drive.google.com/drive/folders/1_ttbZASdiHPW9xt0GSjVjFHF5MAPk2fv?usp=drive_link
-
-## Xiaoran_etal
-
-- `BG导图合集_lxrwyqlxf.zip` — detail: [BG导图合集_lxrwyqlxf](BG导图合集_lxrwyqlxf.md)
-- `思维导图IFBS_lxr.zip` — detail: [思维导图IFBS_lxr](思维导图IFBS_lxr.md)
-- `IN_lxfwyqlxr.zip` — detail: [IN_lxfwyqlxr](IN_lxfwyqlxr.md)
-- `MBE_lxrwyalxf.zip` — detail: [MBE_lxrwyalxf](MBE_lxrwyalxf.md)
-- `pon复习资料_lxrwyqlxf.zip` — detail: [pon复习资料_lxrwyqlxf](pon复习资料_lxrwyqlxf.md)
-
-## Yiru
-
-These are consolidated zips created from each `Yiru` folder. They are intended for upload to Zenodo/Google Drive and are not stored in git.
-
-- `BG2_sum_Yiru.zip`
-- `Code_Cheatsheet_Yiru.zip`
-- `GP2_sum_Yiru.zip`
-- `IBMS3_full_Yiru.zip`
-- `IID_4_full_Yiru.zip`
-- `MBE3_sum_Yiru.zip`
-- `PoN3_full_Yiru.zip`
-
-After you upload these to Zenodo, paste the Zenodo DOI or file links into the corresponding per-zip detail pages or into `ZJE_Collection/ZIPS_INDEX.md`.
-
-## Yue
-
-- `BaO（非完整）.pdf`
-- `IFBStheme34_tutorialquestion.pdf`
-- `IFBS（theme34).zip`
-- `pon.zip` — detail: [pon](pon.md)
-- `MI（非完整）.pdf`
-
----
-
-If you want, I can automatically insert the Zenodo links into these detail pages after you upload. Paste the Zenodo URLs here when ready.
-
+| Resource | Course | Contributor | Tier | Detail Page | Access | Channel |
+|---|---|---|---|---|---|---|
+| ADS2 Exam Skill Bundle | ADS2 | Yiru | Core | [contents](ADS2_exam_skill_bundle.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/ADS2/Yiru/ads2-exam-skill-bundle) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| BG2_sum_Yiru | BG2 | Yiru | Core | [contents](BG2_sum_Yiru.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/BG2/Yiru/BG2_sum_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| BG导图合集_lxrwyqlxf | BG2 | Xiaoran_etal | Large Archive | [contents](BG%E5%AF%BC%E5%9B%BE%E5%90%88%E9%9B%86_lxrwyqlxf.md) | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| GP2_sum_Yiru | GP2 | Yiru | Core | [contents](GP2_sum_Yiru.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/GP2/Yiru/GP2_sum_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| IFBS（theme34) | IFBS2 | Yue | Core | [contents](IFBS%EF%BC%88theme34%29.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/IFBS2/Yue/IFBS%EF%BC%88theme34%29) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| 思维导图IFBS_lxr | IFBS2 | Xiaoran_etal | Large Archive | [contents](%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BEIFBS_lxr.md) | [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IBMS3_full_Yiru | IBMS3 | Yiru | Core | [contents](IBMS3_full_Yiru.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/IBMS3/Yiru/IBMS3_full_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| IN_lxfwyqlxr | IN3_full | Xiaoran_etal | Large Archive | [contents](IN_lxfwyqlxr.md) | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| MBE3_sum_Yiru | MBE3 | Yiru | Core | [contents](MBE3_sum_Yiru.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/MBE3/Yiru/MBE3_sum_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| MBE_lxrwyalxf | MBE3 | Xiaoran_etal | Core | [contents](MBE_lxrwyalxf.md) | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| PoN3_full_Yiru | PoN3 | Yiru | Core | [contents](PoN3_full_Yiru.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/PoN3/Yiru/PoN3_full_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| pon | PoN3 | Yue | Core | [contents](pon.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/PoN3/Yue/pon) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| pon复习资料_lxrwyqlxf | PoN3 | Xiaoran_etal | Core | [contents](pon%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99_lxrwyqlxf.md) | [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i) | <span class="resource-badge resource-badge--onedrive">OneDrive Browser</span> |
+| IID_4_full_Yiru | IID_4 | Yiru | Core | [contents](IID_4_full_Yiru.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year4/IID_4/Yiru/IID_4_full_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |
+| Code_Cheatsheet_Yiru | Code_Cheatsheet | Yiru | Core | [contents](Code_Cheatsheet_Yiru.md) | [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Resources/Code_Cheatsheet/Yiru/Code_Cheatsheet_Yiru) | <span class="resource-badge resource-badge--github">GitHub Direct</span> |

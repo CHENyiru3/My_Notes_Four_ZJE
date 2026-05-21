@@ -1,9 +1,22 @@
-# Ignore generated Yiru zips (created for Zenodo upload)
+# Ignore generated build output.
+site/
+downloads/
+
+# Ignore any legacy local ZIP artifacts.
 ZJE_Collection/zip_contents/Yiru/*.zip
 
-# Do not store ZIP archives in git (host externally, e.g. Google Drive)
+# Do not store ZIP archives in git.
 ZJE_Collection/**/*.zip
+
+# Do not store downloadable resources in git. Host them in OneDrive instead.
+ZJE_Collection/**/*.pdf
+ZJE_Collection/**/*.docx
+ZJE_Collection/**/*.pptx
+ZJE_Collection/**/*.xlsx
+
+# Local-only release context/results may contain account-specific SharePoint paths.
+resource_migration_reports/*.local.*
+resource_migration_reports/public_link_release_results.*
 
 # macOS
 .DS_Store
-

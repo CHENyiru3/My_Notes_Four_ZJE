@@ -30,18 +30,9 @@ jobs:
       - name: Build site
         run: mkdocs build --site-dir site
 
-      - name: Create per-folder zip archives
+      - name: Validate public resource output
         run: |
-          sudo apt-get update
-          sudo apt-get install -y zip
-          mkdir -p site/downloads
-          shopt -s nullglob
-          for d in ZJE_Collection/*; do
-            if [ -d "$d" ]; then
-              name=$(basename "$d")
-              zip -r "site/downloads/${name}.zip" "$d"
-            fi
-          done
+          python3 scripts/check_public_site_output.py --site-dir site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

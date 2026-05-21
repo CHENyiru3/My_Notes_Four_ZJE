@@ -2,10 +2,9 @@
 
 Files:
 
-- [NotebookLLM_Topic_1.pdf](NotebookLLM_Topic_1.pdf)
-- [NotebookLLm_Topic_3.pdf](NotebookLLm_Topic_3.pdf)
-- [NotebookLLM_Topic_4.pdf](NotebookLLM_Topic_4.pdf)
-- [NotebookLLM_Topic_5_EVA.pdf](NotebookLLM_Topic_5_EVA.pdf)
+Downloadable files have moved to OneDrive. See [IID_4 resources](../../resources/index.md#course-iid-4).
+
+Notes:
 - [Topic 0 basic concept of immunology.md](Topic 0 basic concept of immunology.md)
 - [Topic 1 Innate Immune system.md](Topic 1 Innate Immune system.md)
 - [Topic 1.5 Trained Innate Immunity.md](Topic 1.5 Trained Innate Immunity.md)

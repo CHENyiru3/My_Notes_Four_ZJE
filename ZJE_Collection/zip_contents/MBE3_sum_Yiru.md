@@ -1,6 +1,6 @@
-# Contents of MBE3_sum_Yiru.zip
+# Contents of MBE3_sum_Yiru
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../ZIPS_INDEX.md)).
+Access: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/MBE3/Yiru/MBE3_sum_Yiru)
 
 - MBE3_sum/MBE CRISPR screen disease gene factor.md
 - MBE3_sum/MBE CRISPR_screen_drug_resistence.md

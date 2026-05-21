@@ -1,6 +1,6 @@
-# Contents of pon复习资料_lxrwyqlxf.zip
+# Contents of pon复习资料_lxrwyqlxf
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../../ZIPS_INDEX.md)).
+Access: OneDrive folder link pending release.
 
 - pon复习资料/1.1 Neuroscience.xmind
 - pon复习资料/1.2 Presynaptic Release.xmind

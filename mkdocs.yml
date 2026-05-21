@@ -1,6 +1,8 @@
 site_name: ZJE Collection
 site_url: https://chenyiru3.github.io/My_Notes_Four_ZJE/
 docs_dir: ZJE_Collection
+exclude_docs: |
+  resources/resource_manifest.yml
 site_author: ZJE Contributors
 site_description: ZJE Study Materials Collection - Course notes, summaries, and study resources
 
@@ -44,6 +46,9 @@ markdown_extensions:
   - tables
   - footnotes
 
+extra_css:
+  - stylesheets/resource-center.css
+
 nav:
   - Home: index.md
   - Year 1:
@@ -72,8 +77,8 @@ nav:
     - IBMS4: IBMS4/index.md
     - IID_4: IID_4/index.md
   - Resources:
+    - Resource Center: resources/index.md
     - Code Cheatsheet: Code_Cheatsheet/index.md
   - Contributors:
     - Authors: AUTHORS.md
-    - Zips Index: ZIPS_INDEX.md
   - Contributing: CONTRIBUTING.md

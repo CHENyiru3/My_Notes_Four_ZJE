@@ -10,4 +10,4 @@
 
 ## External Resources
 
-- [Hal's Materials (2021-2022)](https://drive.google.com/file/d/12qrRLagEU9GqZkHguhvcXjDtLmpt5xw9/view?usp=sharing)
+Download links are being migrated to OneDrive. See [CHEM1 resources](../resources/index.md#course-chem1).

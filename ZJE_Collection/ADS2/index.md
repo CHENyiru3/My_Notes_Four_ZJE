@@ -3,11 +3,12 @@
 ## Contributors
 
 - Hal (2022-2023): External materials available
+- Yiru: ADS2 exam skill bundle
 
 ## Notes & Materials
 
-*This course currently has limited materials. Contributions welcome!*
+- [ADS2 Exam Skill Bundle](../zip_contents/ADS2_exam_skill_bundle.md): Markdown workflows for online ADS2 problem-solving exams and ICA-style analysis.
 
 ## External Resources
 
-- [Hal's Materials (2022-2023)](https://drive.google.com/file/d/1Fl2WtzDZoyEqi3MLvilNCOUIeTbQTl-Y/view?usp=sharing)
+See [ADS2 resources](../resources/index.md#course-ads2) for GitHub downloads and OneDrive folder access.

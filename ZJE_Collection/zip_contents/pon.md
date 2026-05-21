@@ -1,6 +1,6 @@
-# Contents of pon.zip
+# Contents of pon
 
-Download: hosted externally (see the Google Drive folder linked from [Zips Index](../ZIPS_INDEX.md)).
+Access: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/PoN3/Yue/pon)
 
 - pon/pon angelica.pdf
 - pon/pon gedi.pdf
