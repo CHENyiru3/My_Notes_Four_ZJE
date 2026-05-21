@@ -6,8 +6,8 @@ exclude_docs: |
 site_author: ZJE Contributors
 site_description: ZJE Study Materials Collection - Course notes, summaries, and study resources
 
-repo_url: https://github.com/CHENyiru3/Yiru_study_in_zje
-repo_name: Yiru_study_in_zje
+repo_url: https://github.com/CHENyiru3/My_Notes_Four_ZJE
+repo_name: My_Notes_Four_ZJE
 
 theme:
   name: material
@@ -25,7 +25,7 @@ theme:
   header:
     elements:
       - icon: fontawesome/brands/github
-        link: https://github.com/CHENyiru3/Yiru_study_in_zje
+        link: https://github.com/CHENyiru3/My_Notes_Four_ZJE
         type: absolute_corner
 
   footer:
@@ -33,7 +33,7 @@ theme:
       &copy; 2024 ZJE Collection
     social:
       - icon: fontawesome/brands/github
-        link: https://github.com/CHENyiru3/Yiru_study_in_zje
+        link: https://github.com/CHENyiru3/My_Notes_Four_ZJE
         name: GitHub Repository
 
 plugins:
