@@ -100,6 +100,8 @@ def type_label(value: str) -> str:
 
 
 def tier_label(value: str) -> str:
+    if value == "core":
+        return "Direct Download / Reachable"
     if value == "large_archive":
         return "Large Archive"
     return value.replace("_", " ").title()
@@ -221,7 +223,7 @@ def ordered_year_keys(grouped: dict[str, list[dict[str, Any]]]) -> list[str]:
 def table_for_resources(resources: list[dict[str, Any]], *, include_status: bool = False) -> list[str]:
     if include_status:
         lines = [
-            "| Resource | Course | Contributor | Type | Tier | GitHub | OneDrive |",
+            "| Resource | Course | Contributor | Type | Access Type | GitHub | OneDrive |",
             "|---|---|---|---|---|---|---|",
         ]
     else:
@@ -383,7 +385,7 @@ def write_status(resources: list[dict[str, Any]]) -> None:
         "",
         "For current migration gates, see `migration_status.md`. For local OneDrive folder bundle payload readiness, see `folder_bundle_status.md`. For share-link work, see `public_link_release_queue.md`.",
         "",
-        "| ID | Course | Contributor | Tier | Status | Access Channel | Visibility | Source Pages |",
+        "| ID | Course | Contributor | Access Type | Status | Access Channel | Visibility | Source Pages |",
         "|---|---|---|---|---|---|---|---|",
     ]
     for resource in sorted(resources, key=lambda item: item["id"]):
@@ -411,7 +413,7 @@ def write_packages_index(resources: list[dict[str, Any]]) -> None:
         "",
         "Course packages and folder bundles are listed here with both routes. GitHub appears when a safe mirror exists; OneDrive is the complete folder browser.",
         "",
-        "| Resource | Course | Contributor | Type | Tier | GitHub | OneDrive |",
+        "| Resource | Course | Contributor | Type | Access Type | GitHub | OneDrive |",
         "|---|---|---|---|---|---|---|",
     ]
     if not package_resources:
@@ -434,7 +436,7 @@ def write_folder_contents_overview(resources: list[dict[str, Any]]) -> None:
         "",
         "This folder contains lightweight contents pages for folder bundles. Use GitHub for mirrored bundles and OneDrive for the complete shared folder browser.",
         "",
-        "| Resource | Course | Contributor | Tier | Detail Page | GitHub | OneDrive |",
+        "| Resource | Course | Contributor | Access Type | Detail Page | GitHub | OneDrive |",
         "|---|---|---|---|---|---|---|",
     ]
     for resource in sorted(folder_resources, key=sort_key):

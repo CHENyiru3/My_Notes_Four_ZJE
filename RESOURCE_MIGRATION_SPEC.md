@@ -13,9 +13,9 @@ Canonical resource storage root:
 
 ## 1. Decision
 
-The GitHub repository must not store actual downloadable resources such as ZIP archives, PDFs, DOCX files, PPTX files, XLSX files, videos, or copied image assets.
+The website source repository (`Yiru_study_in_zje`) must not store actual downloadable resources such as ZIP archives, PDFs, DOCX files, PPTX files, XLSX files, videos, or copied image assets.
 
-The GitHub repository should store only:
+The website source repository should store only:
 
 - MkDocs source Markdown.
 - lightweight metadata and manifests.
@@ -23,7 +23,7 @@ The GitHub repository should store only:
 - contributor instructions.
 - placeholder links before OneDrive share links are released.
 
-All actual downloadable resources are moved to OneDrive under `ZJE_resource`. The website links to public OneDrive share URLs after the owner releases them.
+All downloadable resources are organized in OneDrive under `ZJE_resource`. Safe public mirrors for small Markdown/PDF resources may also be published through the separate resource repository, `CHENyiru3/awesome_ZJE_resource`. The website shows both routes explicitly: GitHub when a mirror exists, and OneDrive for the complete shared folder route.
 
 Local filesystem paths under `/Users/eric_yiru/...` are for maintenance only. They must never be used as public website links.
 
@@ -33,8 +33,8 @@ Update: generated ZIP archives are retired. Resources should be released as OneD
 
 ## 2. Goals
 
-1. Reduce GitHub repository size and avoid storing binary study resources in Git.
-2. Make OneDrive the single storage authority for all downloadable resources.
+1. Reduce website repository size and avoid storing binary study resources in `Yiru_study_in_zje`.
+2. Make OneDrive the complete storage authority, with optional GitHub mirrors in `awesome_ZJE_resource` for safe small resources.
 3. Keep the website useful by providing clean download links, clear metadata, and searchable descriptions.
 4. Replace scattered hardcoded download links with a structured manifest.
 5. Preserve contributor attribution, course/year metadata, and archive history.
@@ -274,7 +274,7 @@ site/downloads/
 downloads/
 ```
 
-If a PDF is intentionally small and necessary for direct web reading, it still needs explicit maintainer approval before staying in Git.
+If a PDF is intentionally small and necessary for a GitHub mirror, it should live in `awesome_ZJE_resource`, not in the website source repository. Keeping a binary file directly in `Yiru_study_in_zje` still needs explicit maintainer approval.
 
 ## 7. Manifest Design
 
@@ -496,7 +496,7 @@ Acceptance criteria:
 
 - `gh-pages` no longer contains `downloads/*.zip`.
 - site deployment does not package resource folders.
-- website users download from OneDrive, not GitHub.
+- website users download through manifest-managed GitHub mirrors or OneDrive folder routes, not from payloads packaged into the website repo or `gh-pages`.
 
 ### Phase 7: Archive and Retention
 
@@ -615,7 +615,7 @@ Suggested first slice:
    - local `GP提纲.pdf`.
    - Hal Google Drive link.
 3. `resources/index.md`
-   - show released OneDrive downloads only.
+   - show GitHub and OneDrive routes as separate columns.
 
 Why this slice:
 
@@ -638,7 +638,7 @@ Acceptance criteria for first slice:
 2. Should image URLs be mirrored in OneDrive now?
    - Recommended answer: defer; handle after main downloadable resources are migrated.
 3. Should small PDFs be allowed to remain in Git for direct browser viewing?
-   - Recommended answer: no by default; require explicit approval.
+   - Recommended answer: no in `Yiru_study_in_zje` by default; use `awesome_ZJE_resource` for approved GitHub mirrors.
 4. Should `Hal/*.txt` link files remain?
    - Recommended answer: replace them with generated metadata pages or remove after manifest migration.
 5. Should the manifest be edited manually or generated from OneDrive?
@@ -648,9 +648,9 @@ Acceptance criteria for first slice:
 
 The resource migration is complete when:
 
-1. actual downloadable resources are stored under `ZJE_resource`, not in GitHub.
-2. GitHub contains only source pages, metadata, scripts, and lightweight docs.
-3. all public download links on the website point to released OneDrive URLs.
+1. actual downloadable resources are stored under `ZJE_resource`, with safe small mirrors optionally duplicated in `awesome_ZJE_resource`, not in `Yiru_study_in_zje`.
+2. the website source repository contains only source pages, metadata, scripts, and lightweight docs.
+3. all public download links on the website point to manifest-managed GitHub mirrors or released OneDrive URLs.
 4. pending resources are clearly marked and do not create broken links.
 5. deployment no longer creates or publishes `downloads/*.zip`.
 6. the manifest is the only place where public resource URLs are maintained.
