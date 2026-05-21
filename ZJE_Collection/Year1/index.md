@@ -4,10 +4,10 @@
 
 ## Available Courses
 
-| | |
+| Course | Description |
 |---|---|
-| [CHEM1](../CHEM1/index.md) | Chemistry |
-| [IBI1](../IBI1/index.md) | Introduction to Biomedicine |
-| [IBMS1](../IBMS1/index.md) | Biomedical Sciences |
-| [ICMB1](../ICMB1/index.md) | Cell & Molecular Biology |
-| [MATH1](../MATH1/index.md) | Mathematics |
+| [CHEM1](../CHEM1/index.md) | Chemistry; compulsory course |
+| [IBI1](../IBI1/index.md) | Introduction to Bioinformatics; elective course |
+| [IBMS1](../IBMS1/index.md) | Integrated Biomedical Sciences 1; compulsory course |
+| [ICMB1](../ICMB1/index.md) | Introduction to Cell & Molecular Biology; compulsory course |
+| [MATH1](../MATH1/index.md) | Mathematics; compulsory course |

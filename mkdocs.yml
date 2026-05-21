@@ -51,6 +51,7 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Resource Center: resources/index.md
   - Year 1:
     - CHEM1: CHEM1/index.md
     - IBI1: IBI1/index.md
@@ -67,7 +68,7 @@ nav:
     - MI2: MI2/index.md
   - Year 3:
     - BMI3: BMI3/index.md
-    - CBSB3: CBSB3/index.md
+    - CMML3 (CBSB3): CBSB3/index.md
     - IBMS3: IBMS3/index.md
     - IN3: IN3_full/index.md
     - MBE3: MBE3/index.md
@@ -76,9 +77,7 @@ nav:
     - BIA4: BIA4/index.md
     - IBMS4: IBMS4/index.md
     - IID_4: IID_4/index.md
-  - Resources:
-    - Resource Center: resources/index.md
-    - Code Cheatsheet: Code_Cheatsheet/index.md
+  - Code Cheatsheet: Code_Cheatsheet/index.md
   - Contributors:
     - Authors: AUTHORS.md
   - Contributing: CONTRIBUTING.md

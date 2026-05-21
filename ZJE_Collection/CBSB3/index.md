@@ -1,6 +1,7 @@
-# CBSB3
-! Please notice, this course has been replaced by CMML3 since 2022 class.
+# CMML3 (previously CBSB3)
+
+This course was previously listed as CBSB3. Materials remain under the CBSB3 path for link compatibility.
 
 ## External links
 
-See [CBSB3 resources](../resources/index.md#course-cbsb3) for GitHub mirrors and OneDrive folder access.
+See [CMML3/CBSB3 resources](../resources/index.md#course-cbsb3) for GitHub mirrors and OneDrive folder access.

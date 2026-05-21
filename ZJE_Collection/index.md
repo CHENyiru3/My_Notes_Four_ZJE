@@ -21,44 +21,44 @@ Jump to: [Quick Links](#quick-links) | [Year 1](#year-1) | [Year 2](#year-2) | [
 
 ### Year 1
 
-| Course |  |
-|--------|--|
-| [CHEM1](CHEM1/index.md) | Chemistry |
-| [IBI1](IBI1/index.md) | Introduction to Bioinformatics 1 |
-| [IBMS1](IBMS1/index.md) | Integrated Biomedical Sciences 1 |
-| [ICMB1](ICMB1/index.md) | Introduction to Cell & Molecular Biology |
-| [MATH1](MATH1/index.md) | Mathematics |
+| Course | Description |
+|--------|-------------|
+| [CHEM1](CHEM1/index.md) | Chemistry; compulsory course |
+| [IBI1](IBI1/index.md) | Introduction to Bioinformatics; elective course |
+| [IBMS1](IBMS1/index.md) | Integrated Biomedical Sciences 1; compulsory course |
+| [ICMB1](ICMB1/index.md) | Introduction to Cell & Molecular Biology; compulsory course |
+| [MATH1](MATH1/index.md) | Mathematics; compulsory course |
 
 ### Year 2
 
-| Course |  |
-|--------|--|
-| [ADS2](ADS2/index.md) | Applied Data Science 2|
-| [BG2](BG2/index.md) | Biomedicine Genetics 2 |
-| [BaO2](BaO2/index.md) | BaO2 |
-| [DST2](DST2/index.md) |  |
-| [GP2](GP2/index.md) | Genetics & Programming |
-| [IFBS2](IFBS2/index.md) | Integrated Foundations |
-| [MI2](MI2/index.md) | Microbiology |
+| Course | Description |
+|--------|-------------|
+| [ADS2](ADS2/index.md) | Applied Data Science, about R; elective course for BMI |
+| [BG2](BG2/index.md) | Genetics; compulsory course |
+| [BaO2](BaO2/index.md) | Biology of Organs; elective course for BMS |
+| [DST2](DST2/index.md) | Java; elective course for BMI |
+| [GP2](GP2/index.md) | Genomics & Proteomics; elective course for BMI |
+| [IFBS2](IFBS2/index.md) | Compulsory course |
+| [MI2](MI2/index.md) | Microbiology; elective course for BMS |
 
 ### Year 3
 
-| Course |  |
-|--------|--|
-| [BMI3](BMI3/index.md) | Biomedical Informatics |
-| [CBSB3](CBSB3/index.md) | Computational Biology |
-| [IBMS3](IBMS3/index.md) | Biomedical Sciences |
-| [IN3](IN3_full/index.md) | Immunology |
-| [MBE3](MBE3/index.md) | Molecular Biology |
-| [PoN3](PoN3/index.md) | Principles of Neuroscience |
+| Course | Description |
+|--------|-------------|
+| [BMI3](BMI3/index.md) | Biomedical Informatics; elective course for BMI |
+| [CMML3 (previously CBSB3)](CBSB3/index.md) | Computational modeling; elective course for BMI |
+| [IBMS3](IBMS3/index.md) | Compulsory course |
+| [IN3](IN3_full/index.md) | Immunology; elective course for both BMI and BMS |
+| [MBE3](MBE3/index.md) | Molecular Biology and Epigenetics; elective course for both BMI and BMS |
+| [PoN3](PoN3/index.md) | Principles of Neuroscience; elective course for both BMI and BMS |
 
 ### Year 4
 
-| Course |  |
-|--------|--|
-| [BIA4](BIA4/index.md) | Biomedical Imaging |
-| [IBMS4](IBMS4/index.md) | Biomedical Sciences |
-| [IID_4](IID_4/index.md) | Integrated iGEM Design |
+| Course | Description |
+|--------|-------------|
+| [BIA4](BIA4/index.md) | Biomedical Imaging; elective course for both BMI and BMS |
+| [IBMS4](IBMS4/index.md) | Biomedical Sciences; elective course for both BMI and BMS |
+| [IID_4](IID_4/index.md) | More immunology; elective course for both BMI and BMS |
 
 ---
 
