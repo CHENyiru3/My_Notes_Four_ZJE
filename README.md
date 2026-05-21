@@ -5,7 +5,7 @@
 # 下一步的想法
 **希望能找到资源站继任的管理者！大二/ 大三同学可能会比较适合**
 
-听说学院的代码课很多允许考试时候使用 online AI 甚至 agent 了。虽然我本人对此可操作性和公平性表示一定怀疑，但是从应试的角度来说，资料的收集和 Skill 蒸馏似乎是一个有效的方法。关于 skill，请查看 Claude Code 的官方网站说明：https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+听说学院的代码课很多允许考试时候使用AI了。虽然我本人对此可操作性和公平性表示一定怀疑，但是从应试的角度来说，资料的收集和 Skill 蒸馏似乎是一个有效的方法。关于 skill，请查看 Claude Code 的官方网站说明：https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
 
 简而言之，将考试需要的代码模块和流程提前 distill to skill bundle，考试的时候直接加载安装，基本完成了考试的一半。目前已经完成了一个版本的 skill set for ADS2，因为很久没考试了所以仅供参考：https://chenyiru3.github.io/My_Notes_Four_ZJE/ADS2/
 
