@@ -12,4 +12,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [IBMS3 resources](../resources/index.md#course-ibms3).
+See [IBMS3 resources](../resources/index.md#course-ibms3) for GitHub mirrors and OneDrive folder access.

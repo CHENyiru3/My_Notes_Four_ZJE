@@ -2,4 +2,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [BMI3 resources](../resources/index.md#course-bmi3).
+See [BMI3 resources](../resources/index.md#course-bmi3) for GitHub mirrors and OneDrive folder access.

@@ -2,4 +2,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [IBMS1 resources](../resources/index.md#course-ibms1).
+See [IBMS1 resources](../resources/index.md#course-ibms1) for GitHub mirrors and OneDrive folder access.

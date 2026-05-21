@@ -2,4 +2,4 @@
 
 Files:
 
-Downloadable files have moved to OneDrive. See [BG2 resources](../../resources/index.md#course-bg2).
+See [BG2 resources](../../resources/index.md#course-bg2) for GitHub mirrors and OneDrive folder access.

@@ -1,4 +1,4 @@
 # IFBS2 — Yue
 
-Downloadable files have moved to OneDrive. See [IFBS2 resources](../../resources/index.md#course-ifbs2).
+See [IFBS2 resources](../../resources/index.md#course-ifbs2) for GitHub mirrors and OneDrive folder access.
 

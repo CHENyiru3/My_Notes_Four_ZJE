@@ -10,4 +10,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [BG2 resources](../resources/index.md#course-bg2).
+See [BG2 resources](../resources/index.md#course-bg2) for GitHub mirrors and OneDrive folder access.

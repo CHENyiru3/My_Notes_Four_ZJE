@@ -2,4 +2,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [MATH1 resources](../resources/index.md#course-math1).
+See [MATH1 resources](../resources/index.md#course-math1) for GitHub mirrors and OneDrive folder access.

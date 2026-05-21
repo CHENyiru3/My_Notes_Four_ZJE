@@ -2,4 +2,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [DST2 resources](../resources/index.md#course-dst2).
+See [DST2 resources](../resources/index.md#course-dst2) for GitHub mirrors and OneDrive folder access.

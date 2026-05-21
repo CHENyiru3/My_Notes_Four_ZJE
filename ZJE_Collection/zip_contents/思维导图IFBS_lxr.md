@@ -1,6 +1,6 @@
 # Contents of 思维导图IFBS_lxr
 
-Access: [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5)
+Access: OneDrive: [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5)
 
 - 思维导图IFBS/theme1/1.12-1.16 Urinary System.xmind
 - 思维导图IFBS/theme1/1.2-1.3 The heart.xmind

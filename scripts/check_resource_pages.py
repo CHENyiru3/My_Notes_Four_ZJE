@@ -92,11 +92,11 @@ def main() -> int:
 
     if not released:
         text = DOWNLOAD_INDEX.read_text(encoding="utf-8") if DOWNLOAD_INDEX.exists() else ""
-        if "No public OneDrive resource links are released yet." not in text:
-            errors.append("resources/index.md must show the empty released-download state")
+        if "## Resource Catalog" not in text or "| Resource | Course | Contributor | Type | Tier | GitHub | OneDrive |" not in text:
+            errors.append("resources/index.md must show the route-based resource catalog")
         package_text = PACKAGE_INDEX.read_text(encoding="utf-8") if PACKAGE_INDEX.exists() else ""
-        if "No released packages yet" not in package_text:
-            errors.append("ZIPS_INDEX.md must show the empty released-package state")
+        if "No active packages yet" not in package_text:
+            errors.append("ZIPS_INDEX.md must show the empty package state")
 
     if errors:
         print("\n".join(errors))

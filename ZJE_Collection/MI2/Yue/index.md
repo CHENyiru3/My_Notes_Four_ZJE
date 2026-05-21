@@ -1,4 +1,4 @@
 # MI2 — Yue
 
-Downloadable files have moved to OneDrive. See [MI2 resources](../../resources/index.md#course-mi2).
+See [MI2 resources](../../resources/index.md#course-mi2) for GitHub mirrors and OneDrive folder access.
 

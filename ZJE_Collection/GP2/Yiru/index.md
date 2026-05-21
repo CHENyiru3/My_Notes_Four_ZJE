@@ -2,4 +2,4 @@
 
 Files:
 
-Downloadable files have moved to OneDrive. See [GP2 resources](../../resources/index.md#course-gp2).
+See [GP2 resources](../../resources/index.md#course-gp2) for GitHub mirrors and OneDrive folder access.

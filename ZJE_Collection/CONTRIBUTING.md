@@ -16,7 +16,7 @@ CONTRIBUTING（贡献指南）
 
 - 请将资源文件交给维护者整理到统一的 OneDrive 资源库中。
 - For resource files, send the files or cloud link to the maintainer instead of committing the files to GitHub.
-- 维护者会在内部资源清单中补充条目/状态，并在 release 后填入公开 OneDrive 下载链接。
+- 维护者会在内部资源清单中补充条目/状态，并在 release 后填入公开下载路线。适合镜像的资源会显示 GitHub 链接，同时保留 OneDrive 文件夹入口；大型或混合格式资源优先使用 OneDrive。
 - 如果是文件夹资源，请在 `ZJE_Collection/zip_contents/` 中添加对应的“内容页”（可写明文件夹内包含哪些文件，或课程范围）。
 
 3. 如果包含一些比较难以网站直接读取的格式，请作为 OneDrive 文件夹资源交给维护者整理。如果特别希望直接在网上阅读，md 格式最好。

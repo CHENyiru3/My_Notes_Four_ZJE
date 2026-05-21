@@ -13,7 +13,7 @@ Jump to: [Quick Links](#quick-links) | [Year 1](#year-1) | [Year 2](#year-2) | [
 ## Quick Links
 
 - [Code Cheatsheet](Code_Cheatsheet/index.md) - Programming references (R, Python, Java, SQL)
-- [Resource Downloads](resources/index.md) - Released OneDrive files and folder bundles
+- [Resource Downloads](resources/index.md) - GitHub mirrors and OneDrive folder access
 
 ---
 

@@ -10,4 +10,4 @@
 
 ## External Resources
 
-Download links are being migrated to OneDrive. See [CHEM1 resources](../resources/index.md#course-chem1).
+See [CHEM1 resources](../resources/index.md#course-chem1) for GitHub mirrors and OneDrive folder access.

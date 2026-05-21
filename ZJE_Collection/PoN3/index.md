@@ -12,4 +12,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [PoN3 resources](../resources/index.md#course-pon3).
+See [PoN3 resources](../resources/index.md#course-pon3) for GitHub mirrors and OneDrive folder access.

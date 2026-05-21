@@ -2,4 +2,4 @@
 
 This folder contains short cheat-sheets and summaries for common programming tasks.
 
-Downloadable files have moved to OneDrive. See [Code Cheatsheet resources](../resources/index.md#course-code-cheatsheet).
+See [Code Cheatsheet resources](../resources/index.md#course-code-cheatsheet) for GitHub mirrors and OneDrive folder access.

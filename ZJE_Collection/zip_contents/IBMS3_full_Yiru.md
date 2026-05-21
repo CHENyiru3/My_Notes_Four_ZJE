@@ -1,6 +1,6 @@
 # Contents of IBMS3_full_Yiru
 
-Access: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/IBMS3/Yiru/IBMS3_full_Yiru)
+Access: GitHub: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year3/IBMS3/Yiru/IBMS3_full_Yiru) | OneDrive: [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i)
 
 - IBMS3_full/Experimental Design & Ethics.pdf
 - IBMS3_full/IBMS Dry Lab 答题总结.pdf

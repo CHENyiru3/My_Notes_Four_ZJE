@@ -1,6 +1,6 @@
 # Contents of pon复习资料_lxrwyqlxf
 
-Access: [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i)
+Access: OneDrive: [Browse Year 3 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgBFjNEq0SJTRoSULgSHjztQARzlUUuGBtdTGMKUllexUtA?e=GY314i)
 
 - pon复习资料/1.1 Neuroscience.xmind
 - pon复习资料/1.2 Presynaptic Release.xmind

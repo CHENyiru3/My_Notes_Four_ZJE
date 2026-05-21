@@ -12,4 +12,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [MBE3 resources](../resources/index.md#course-mbe3).
+See [MBE3 resources](../resources/index.md#course-mbe3) for GitHub mirrors and OneDrive folder access.

@@ -10,4 +10,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [GP2 resources](../resources/index.md#course-gp2).
+See [GP2 resources](../resources/index.md#course-gp2) for GitHub mirrors and OneDrive folder access.

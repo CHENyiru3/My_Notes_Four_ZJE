@@ -2,4 +2,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [ICMB1 resources](../resources/index.md#course-icmb1).
+See [ICMB1 resources](../resources/index.md#course-icmb1) for GitHub mirrors and OneDrive folder access.

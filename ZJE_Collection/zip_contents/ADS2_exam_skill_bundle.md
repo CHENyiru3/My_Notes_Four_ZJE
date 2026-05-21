@@ -1,6 +1,6 @@
 # Contents of ADS2 Exam Skill Bundle
 
-Access: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/ADS2/Yiru/ads2-exam-skill-bundle)
+Access: GitHub: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year2/ADS2/Yiru/ads2-exam-skill-bundle) | OneDrive: [Browse Year 2 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgAQsSutUsB9SKby83Q5DBL8ARaH6G0SwoRC1PcAGeImmn4?e=c7kbO5)
 
 Portable Markdown skill bundle for ADS2 online problem-solving exams and ICA-style analysis.
 

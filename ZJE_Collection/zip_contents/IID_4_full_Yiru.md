@@ -1,6 +1,6 @@
 # Contents of IID_4_full_Yiru
 
-Access: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year4/IID_4/Yiru/IID_4_full_Yiru)
+Access: GitHub: [Open GitHub folder](https://github.com/CHENyiru3/awesome_ZJE_resource/tree/main/resources/COURSES/Year4/IID_4/Yiru/IID_4_full_Yiru) | OneDrive: [Browse Year 4 folder](https://zjuintl-my.sharepoint.com/:f:/g/personal/yiru_22_intl_zju_edu_cn/IgCSCCfBxURMSq5JFol9LPT0AUOWaYbFo67D2u_X_O8z508?e=vYnq5P)
 
 - IID_4_full/NotebookLLM_Topic_1.pdf
 - IID_4_full/NotebookLLM_Topic_4.pdf

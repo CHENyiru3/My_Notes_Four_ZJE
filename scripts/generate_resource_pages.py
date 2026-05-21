@@ -9,7 +9,14 @@ import urllib.parse
 from collections import defaultdict
 from typing import Any
 
-from resource_manifest import DOCS_DIR, REPORT_DIR, RESOURCE_DIR, read_manifest
+from resource_manifest import (
+    DOCS_DIR,
+    GITHUB_RESOURCE_HOSTS,
+    REPORT_DIR,
+    RESOURCE_DIR,
+    is_public_onedrive_url,
+    read_manifest,
+)
 
 ONEDRIVE_BROWSER_LINKS = {
     "all": {
@@ -116,21 +123,59 @@ def onedrive_label(resource: dict[str, Any]) -> str:
     return f"Browse {link['label']} folder"
 
 
-def access_cell(resource: dict[str, Any]) -> str:
-    if resource["public_url_status"] == "released" and resource.get("public_url"):
-        return f"[{github_label(resource)}]({markdown_url(str(resource['public_url']))})"
+def released_public_url(resource: dict[str, Any]) -> str:
+    if resource["public_url_status"] != "released":
+        return ""
+    return str(resource.get("public_url") or "").strip()
+
+
+def public_url_channel(url: str) -> str:
+    if not url:
+        return ""
+    if is_public_onedrive_url(url):
+        return "onedrive"
+    parsed = urllib.parse.urlsplit(url)
+    if parsed.scheme == "https" and parsed.netloc.lower() in GITHUB_RESOURCE_HOSTS:
+        return "github"
+    return "direct"
+
+
+def github_url(resource: dict[str, Any]) -> str:
+    url = released_public_url(resource)
+    if public_url_channel(url) == "github":
+        return url
+    return ""
+
+
+def onedrive_direct_url(resource: dict[str, Any]) -> str:
+    url = released_public_url(resource)
+    if public_url_channel(url) == "onedrive":
+        return url
+    return ""
+
+
+def github_cell(resource: dict[str, Any]) -> str:
+    url = github_url(resource)
+    if not url:
+        return '<span class="resource-muted">Not mirrored</span>'
+    return f"[{github_label(resource)}]({markdown_url(url)})"
+
+
+def onedrive_cell(resource: dict[str, Any]) -> str:
+    direct_url = onedrive_direct_url(resource)
+    if direct_url:
+        return f"[Open OneDrive link]({markdown_url(direct_url)})"
     link = onedrive_link(resource)
     return f"[{onedrive_label(resource)}]({markdown_url(link['url'])})"
 
 
-def channel_badge(resource: dict[str, Any]) -> str:
-    if resource["public_url_status"] == "released" and resource.get("public_url"):
-        label = "GitHub Direct"
-        css = "github"
-    else:
-        label = "OneDrive Browser"
-        css = "onedrive"
-    return f'<span class="resource-badge resource-badge--{css}">{label}</span>'
+def access_summary(resource: dict[str, Any]) -> str:
+    parts: list[str] = []
+    url = github_url(resource)
+    if url:
+        parts.append(f"GitHub: [{github_label(resource)}]({markdown_url(url)})")
+    parts.append(f"OneDrive: {onedrive_cell(resource)}")
+    return " | ".join(parts)
 
 
 def active_resources(resources: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -163,13 +208,13 @@ def ordered_year_keys(grouped: dict[str, list[dict[str, Any]]]) -> list[str]:
 def table_for_resources(resources: list[dict[str, Any]], *, include_status: bool = False) -> list[str]:
     if include_status:
         lines = [
-            "| Resource | Course | Contributor | Type | Tier | Access | Channel |",
+            "| Resource | Course | Contributor | Type | Tier | GitHub | OneDrive |",
             "|---|---|---|---|---|---|---|",
         ]
     else:
         lines = [
-            "| Resource | Course | Contributor | Type | Access |",
-            "|---|---|---|---|---|",
+            "| Resource | Course | Contributor | Type | GitHub | OneDrive |",
+            "|---|---|---|---|---|---|",
         ]
 
     for resource in sorted(resources, key=sort_key):
@@ -183,8 +228,8 @@ def table_for_resources(resources: list[dict[str, Any]], *, include_status: bool
                         md_text(resource["contributor"]),
                         type_label(str(resource["resource_type"])),
                         tier_label(str(resource.get("release_tier", "core"))),
-                        access_cell(resource),
-                        channel_badge(resource),
+                        github_cell(resource),
+                        onedrive_cell(resource),
                     ]
                 )
                 + " |"
@@ -198,7 +243,8 @@ def table_for_resources(resources: list[dict[str, Any]], *, include_status: bool
                         md_text(resource["course"]),
                         md_text(resource["contributor"]),
                         type_label(str(resource["resource_type"])),
-                        access_cell(resource),
+                        github_cell(resource),
+                        onedrive_cell(resource),
                     ]
                 )
                 + " |"
@@ -220,13 +266,19 @@ def write_download_csv(resources: list[dict[str, Any]]) -> None:
                 "release_tier",
                 "public_url_status",
                 "public_url",
+                "github_url",
+                "onedrive_url",
             ],
+            lineterminator="\n",
         )
         writer.writeheader()
         for resource in resources:
             if resource["public_url_status"] != "released":
                 continue
-            writer.writerow({key: resource.get(key, "") for key in writer.fieldnames})
+            row = {key: resource.get(key, "") for key in writer.fieldnames}
+            row["github_url"] = github_url(resource)
+            row["onedrive_url"] = onedrive_direct_url(resource) or onedrive_link(resource)["url"]
+            writer.writerow(row)
 
 
 def folder_card_html(key: str, resources: list[dict[str, Any]]) -> str:
@@ -241,7 +293,7 @@ def folder_card_html(key: str, resources: list[dict[str, Any]]) -> str:
             f'<h3>{html.escape(link["label"])}</h3>',
             f'<p>{html.escape(link["description"])}</p>',
             f'<div class="resource-folder-count">{count} listed resources</div>',
-            f'<a class="resource-button resource-button--onedrive" href="{html.escape(markdown_url(link["url"]))}" target="_blank" rel="noopener">Open OneDrive folder</a>',
+            f'<a class="resource-button resource-button--onedrive" href="{html.escape(markdown_url(link["url"]))}" target="_blank" rel="noopener">Browse in OneDrive</a>',
             "</article>",
         ]
     )
@@ -249,8 +301,7 @@ def folder_card_html(key: str, resources: list[dict[str, Any]]) -> str:
 
 def write_index(resources: list[dict[str, Any]]) -> None:
     active = active_resources(resources)
-    released = [resource for resource in active if resource["public_url_status"] == "released"]
-    onedrive_only = [resource for resource in active if resource["public_url_status"] != "released"]
+    github_mirrors = [resource for resource in active if github_url(resource)]
     large_archives = [resource for resource in active if str(resource.get("release_tier")) == "large_archive"]
     courses = sorted({resource["course"] for resource in active})
 
@@ -260,19 +311,27 @@ def write_index(resources: list[dict[str, Any]]) -> None:
         '<section class="resource-hero">',
         "<div>",
         "<p class=\"resource-kicker\">ZJE study materials</p>",
-        "<h2>Download core PDFs from GitHub, browse everything else in OneDrive.</h2>",
-        "<p>GitHub hosts the PDF and Markdown files that are safe for normal repository storage. OneDrive hosts larger archives, Office files, OneNote, XMind, and any mixed-format course folders. Open a shared folder online to inspect contents, download one file, or download the whole folder.</p>",
+        "<h2>Use GitHub for direct mirrors, or OneDrive for the complete shared folders.</h2>",
+        "<p>Each resource row lists the available routes. GitHub is fastest for mirrored PDFs and Markdown bundles. OneDrive is the complete browser for large archives, Office files, OneNote, XMind, and course folders.</p>",
         "</div>",
         "</section>",
         "",
         '<section class="resource-kpi-grid">',
-        f'<div class="resource-kpi"><strong>{len(released)}</strong><span>GitHub direct items</span></div>',
-        f'<div class="resource-kpi"><strong>{len(onedrive_only)}</strong><span>OneDrive browser items</span></div>',
-        f'<div class="resource-kpi"><strong>{len(large_archives)}</strong><span>large archive records</span></div>',
+        f'<div class="resource-kpi"><strong>{len(active)}</strong><span>resources listed</span></div>',
+        f'<div class="resource-kpi"><strong>{len(github_mirrors)}</strong><span>GitHub mirrors</span></div>',
+        f'<div class="resource-kpi"><strong>{len(large_archives)}</strong><span>OneDrive-first archives</span></div>',
         f'<div class="resource-kpi"><strong>{len(courses)}</strong><span>course collections</span></div>',
         "</section>",
         "",
-        "## Browse Shared OneDrive Folders",
+        "## How Downloads Work",
+        "",
+        '<section class="resource-route-grid">',
+        '<article class="resource-route-card"><h3>GitHub</h3><p>Use the GitHub column when a resource has a direct mirror. It opens a raw file or a browsable folder in the resource repository.</p></article>',
+        '<article class="resource-route-card"><h3>OneDrive</h3><p>Use the OneDrive column when you want the complete course folder, mixed file formats, or large archives.</p></article>',
+        '<article class="resource-route-card"><h3>Course Pages</h3><p>Course pages remain for reading Markdown notes. Resource tables below are the source of truth for downloadable files and folder bundles.</p></article>',
+        "</section>",
+        "",
+        "## OneDrive Folders",
         "",
         '<section class="resource-folder-grid">',
     ]
@@ -282,30 +341,13 @@ def write_index(resources: list[dict[str, Any]]) -> None:
         [
             "</section>",
             "",
-            "## GitHub Direct Downloads",
+            "## Resource Catalog",
             "",
-            "These items are mirrored in the GitHub resource repository and open directly as raw files or GitHub folders.",
+            "Every non-retired resource appears once below. If a GitHub mirror exists, it is shown next to the matching OneDrive folder route.",
             "",
         ]
     )
 
-    if not released:
-        lines.extend(["No GitHub direct resources are released yet.", ""])
-    else:
-        grouped = grouped_by_year(released)
-        for key in ordered_year_keys(grouped):
-            lines.extend([f"### {YEAR_LABELS.get(key, key)}", ""])
-            lines.extend(table_for_resources(grouped[key]))
-            lines.append("")
-
-    lines.extend(
-        [
-            "## Full Resource Catalog",
-            "",
-            "This catalog lists every non-retired resource record. Items marked OneDrive Browser are intentionally accessed through the shared OneDrive folder rather than an individual GitHub release link.",
-            "",
-        ]
-    )
     grouped_active = grouped_by_year(active)
     for key in ordered_year_keys(grouped_active):
         lines.extend([f"### {YEAR_LABELS.get(key, key)}", ""])
@@ -333,7 +375,11 @@ def write_status(resources: list[dict[str, Any]]) -> None:
     ]
     for resource in sorted(resources, key=lambda item: item["id"]):
         sources = "<br>".join(resource.get("website_sources", []))
-        channel = "GitHub direct" if resource["public_url_status"] == "released" else "OneDrive browser"
+        channel_parts = []
+        if github_url(resource):
+            channel_parts.append("GitHub direct")
+        channel_parts.append("OneDrive browser")
+        channel = " + ".join(channel_parts)
         lines.append(
             f"| `{resource['id']}` | {md_text(resource['course'])} | {md_text(resource['contributor'])} | {tier_label(str(resource.get('release_tier', 'core')))} | {resource['public_url_status']} | {channel} | {resource['visibility']} | {sources} |"
         )
@@ -350,16 +396,16 @@ def write_packages_index(resources: list[dict[str, Any]]) -> None:
     lines = [
         "# Resource Package Index",
         "",
-        "Course packages and folder bundles are listed here even when their payload is OneDrive-only. GitHub-safe PDF/Markdown bundles link to GitHub; larger or mixed-format packages link to the relevant OneDrive browser folder.",
+        "Course packages and folder bundles are listed here with both routes. GitHub appears when a safe mirror exists; OneDrive is the complete folder browser.",
         "",
-        "| Resource | Course | Contributor | Type | Tier | Access | Channel |",
+        "| Resource | Course | Contributor | Type | Tier | GitHub | OneDrive |",
         "|---|---|---|---|---|---|---|",
     ]
     if not package_resources:
         lines.append("| No active packages yet |  |  |  |  |  |  |")
     for resource in sorted(package_resources, key=sort_key):
         lines.append(
-            f"| {md_text(resource['title'])} | {md_text(resource['course'])} | {md_text(resource['contributor'])} | {type_label(resource['resource_type'])} | {tier_label(str(resource.get('release_tier', 'core')))} | {access_cell(resource)} | {channel_badge(resource)} |"
+            f"| {md_text(resource['title'])} | {md_text(resource['course'])} | {md_text(resource['contributor'])} | {type_label(resource['resource_type'])} | {tier_label(str(resource.get('release_tier', 'core')))} | {github_cell(resource)} | {onedrive_cell(resource)} |"
         )
     (DOCS_DIR / "ZIPS_INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -373,9 +419,9 @@ def write_folder_contents_overview(resources: list[dict[str, Any]]) -> None:
     lines = [
         "# Folder Bundle Contents Overview",
         "",
-        "This folder contains lightweight contents pages for folder bundles. GitHub-safe bundles open directly in GitHub; larger or mixed-format bundles are browsed through the shared OneDrive folders.",
+        "This folder contains lightweight contents pages for folder bundles. Use GitHub for mirrored bundles and OneDrive for the complete shared folder browser.",
         "",
-        "| Resource | Course | Contributor | Tier | Detail Page | Access | Channel |",
+        "| Resource | Course | Contributor | Tier | Detail Page | GitHub | OneDrive |",
         "|---|---|---|---|---|---|---|",
     ]
     for resource in sorted(folder_resources, key=sort_key):
@@ -390,7 +436,7 @@ def write_folder_contents_overview(resources: list[dict[str, Any]]) -> None:
         else:
             detail = ""
         lines.append(
-            f"| {md_text(resource['title'])} | {md_text(resource['course'])} | {md_text(resource['contributor'])} | {tier_label(str(resource.get('release_tier', 'core')))} | {detail} | {access_cell(resource)} | {channel_badge(resource)} |"
+            f"| {md_text(resource['title'])} | {md_text(resource['course'])} | {md_text(resource['contributor'])} | {tier_label(str(resource.get('release_tier', 'core')))} | {detail} | {github_cell(resource)} | {onedrive_cell(resource)} |"
         )
     (DOCS_DIR / "zip_contents" / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -417,7 +463,7 @@ def write_folder_detail_headers(resources: list[dict[str, Any]]) -> None:
                 output.append(f"# Contents of {resource['title']}")
                 continue
             if not replaced_status and (line.startswith("Download:") or line.startswith("Access:")):
-                output.append(f"Access: {access_cell(resource)}")
+                output.append(f"Access: {access_summary(resource)}")
                 replaced_status = True
                 continue
             output.append(line)

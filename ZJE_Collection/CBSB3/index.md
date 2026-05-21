@@ -3,4 +3,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [CBSB3 resources](../resources/index.md#course-cbsb3).
+See [CBSB3 resources](../resources/index.md#course-cbsb3) for GitHub mirrors and OneDrive folder access.

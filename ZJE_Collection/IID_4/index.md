@@ -10,4 +10,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [IID_4 resources](../resources/index.md#course-iid-4).
+See [IID_4 resources](../resources/index.md#course-iid-4) for GitHub mirrors and OneDrive folder access.

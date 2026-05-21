@@ -2,4 +2,4 @@
 
 ## External links
 
-Download links are being migrated to OneDrive. See [BIA4 resources](../resources/index.md#course-bia4).
+See [BIA4 resources](../resources/index.md#course-bia4) for GitHub mirrors and OneDrive folder access.

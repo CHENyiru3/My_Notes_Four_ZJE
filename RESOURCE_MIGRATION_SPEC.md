@@ -470,15 +470,18 @@ course index resource blocks if needed
 
 Generated page behavior:
 
-- Public download pages show only `public_url_status: released` resources, each as a direct OneDrive file or folder link.
-- Pending, private, broken, and unavailable resources stay out of public download tables.
+- Public resource pages list non-retired resources in one catalog with separate `GitHub` and `OneDrive` route columns.
+- Released GitHub-safe resources show a GitHub mirror and still keep a OneDrive folder route.
+- Resources without a GitHub mirror show that GitHub is unavailable and point users to the relevant shared OneDrive browser folder when public browsing is allowed.
+- Pending, private, broken, and unavailable resources must not expose direct private URLs or internal storage paths.
 - Maintainer reports in `resource_migration_reports/` track pending links, payload readiness, and release queue state.
 - If `retired`, hide from course pages but keep in archive/status pages.
 
 Acceptance criteria:
 
 - pages are generated from the manifest.
-- no course page has manually duplicated OneDrive links.
+- no course page has manually duplicated resource tables or per-resource OneDrive links.
+- public tables do not collapse GitHub and OneDrive into one exclusive channel.
 - `mkdocs build` succeeds.
 
 ### Phase 6: Update Deployment

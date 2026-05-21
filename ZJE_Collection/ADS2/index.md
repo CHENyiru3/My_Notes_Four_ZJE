@@ -11,4 +11,4 @@
 
 ## External Resources
 
-See [ADS2 resources](../resources/index.md#course-ads2) for GitHub downloads and OneDrive folder access.
+See [ADS2 resources](../resources/index.md#course-ads2) for GitHub mirrors and OneDrive folder access.

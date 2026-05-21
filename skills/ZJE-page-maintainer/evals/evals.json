@@ -1,0 +1,20 @@
+{
+  "skill_name": "ZJE-page-maintainer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A student says BG2 resources only show GitHub, but they also want OneDrive. Review and fix the website logic.",
+      "expected_output": "The agent inspects the manifest and generator, keeps resource routing manifest-driven, and preserves separate GitHub and OneDrive route columns."
+    },
+    {
+      "id": 2,
+      "prompt": "Add a new released PDF resource for IFBS2 and update the public pages.",
+      "expected_output": "The agent edits the manifest carefully, regenerates resource pages, verifies public/private boundaries, and runs resource checks."
+    },
+    {
+      "id": 3,
+      "prompt": "Clean up stale course-page download wording across the ZJE site.",
+      "expected_output": "The agent updates low-risk course-page copy to point to resource-center anchors without duplicating generated resource tables."
+    }
+  ]
+}
