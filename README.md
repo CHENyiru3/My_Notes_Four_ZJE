@@ -1,4 +1,4 @@
-大家好，欢迎来本存储库。可以直接查看对应网站，方便在线查阅和下载文件：https://chenyiru3.github.io/My_Notes_Four_ZJE
+大家好，欢迎来本存储库。可以直接查看对应网站，方便在线查阅和下载文件：https://notes.zjers.com/ （感谢zhouyue23学长提供的网站解析域名！）或者原始的https://chenyiru3.github.io/My_Notes_Four_ZJE
 
 我是 ZJE 22 级的 yr 同学，希望仓库能帮到你。如果你也想为本仓库的持续发展做出贡献，欢迎随时 pull request，或者和我联系帮忙整理！只要有时间都会两日内进行处理。
 
